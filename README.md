@@ -51,17 +51,19 @@ Para poder realizar este desafío, se deben cumplir con los siguientes requisito
 
 ## Lorena Tito Ramos
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
+Ingeniera Industrial, Peruana - 24 años (Apodo: "Lore");
+Conocimientos en Gestión de Procesos, Ux Design y estudiante de Desarrollo Web Full Stack.
+Poseo 03 años de experiencia en áreas distintas como ingeniería, procesos y compras en el sector de construcción y consultoría. Soy una profesional dedicada, capaz y creativa.
+Primeramente, he evaluado la factibilidad del desarrollo de productos derivados o nuevos productos solicitados por el área de nuevos negocios. Adicionalmente, he dado seguimiento del comportamiento de proveedores y evaluado otras opciones con el fin de reducir costos en la compañía, manteniendo la calidad de servicio y producto. Finalmente, he brindado soporte a las áreas operativas para poder asegurar la continuidad de las operaciones.
+Interés en Lean Analytics & Tecnologías Disruptivas.
 
-       http://www.apache.org/licenses/LICENSE-2.0
+Redes sociales:
+- [Linkedin - Lorena Tito Ramos](https://www.linkedin.com/in/lorenatitoramos/)
+- [Github - Elloisa](https://github.com/Elloisa)
+- [Twitter - @10lore05](https://twitter.com/10lore05)
 
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+Contacto directo:
+       lorena.tito.ramos@gmail.com / lorena10051996@hotmail.com -  +51 954 751 149
 
 ## Octavio Lafourcade
 
