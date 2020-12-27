@@ -7,7 +7,7 @@ Proyecto integrador DH - Market place
 - [2. Inspiración en referentes del mercado](#2-inspiración-en-referentes-del-mercado)
   - [2.1. Referente 1](#21-referente-1)
   - [2.2. Referente 2](#22-referente-2)
-  - [2.3. Referente 3](#23-referente-3
+  - [2.3. Referente 3](#23-referente-3)
   - [2.4. Referente 4](#24-referente-4)
   - [2.5. Referente 5](#25-referente-5)
   
