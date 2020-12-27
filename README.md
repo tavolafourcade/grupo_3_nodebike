@@ -51,7 +51,7 @@ Para poder realizar este desafío, se deben cumplir con los siguientes requisito
 
 ## Lorena Tito Ramos
 
-Ingeniera Industrial, Peruana - 24 años (Apodo: "Lore");
+Ingeniera Industrial, Peruana - 24 años (Apodo: "Lore").
 Conocimientos en Gestión de Procesos, Ux Design y estudiante de Desarrollo Web Full Stack.
 Poseo 03 años de experiencia en áreas distintas como ingeniería, procesos y compras en el sector de construcción y consultoría. Soy una profesional dedicada, capaz y creativa.
 Primeramente, he evaluado la factibilidad del desarrollo de productos derivados o nuevos productos solicitados por el área de nuevos negocios. Adicionalmente, he dado seguimiento del comportamiento de proveedores y evaluado otras opciones con el fin de reducir costos en la compañía, manteniendo la calidad de servicio y producto. Finalmente, he brindado soporte a las áreas operativas para poder asegurar la continuidad de las operaciones.
