@@ -21,11 +21,11 @@ Proyecto integrador DH - Market place
 
 ### 1.1. Descripción del producto o servicio
 
-Venta de artículos de ciclismo.
+ZZZ es una tienda en línea especializada en bicicletas y artículos de ciclismo. Nos enfocamos en que consigas las bicicletas y los accesorios que deseas, y un excelente servicio post venta. Nuestro objetivo es que disfrutes de una experiencia completa, ya sea que estés iniciando en el mundo del ciclismo o tengas tiempo disfrutando de una bicicleta y estés buscando opciones para ampliar tu experiencia en entornos urbanos, y no urbanos con la seguridad y calidad que mereces. Además de nuestros productos garantizados, podrás encontrar una sección de noticias sobre eventos de ciclismo y valiosos consejos que te servirán a la hora de elegir una bicicleta, renovar accesorios o darle a tu bicicleta actual el mantenimiento preventivo que necesitas.
 
 ### 1.2. Nuestra audiencia objetivo
 
-Ciclistas
+Nuestra audiencia principal son los usuarios de la bicicleta, tanto usuarios con experiencia en las distintas modalidades de ciclismo, como los usuarios que recién se introducen en el mundo del ciclismo y desean hacerlo con artículos de calidad y seguridad garantizada. 
 
 ## 2. Inspiración en referentes del mercado
 
