@@ -7,7 +7,7 @@ Proyecto integrador DH - Market place
 - [2. Inspiración en referentes del mercado](#2-inspiración-en-referentes-del-mercado)
   - [2.1. Referente 1 TREK](#21-referente-1-trek)
   - [2.2. Referente 2 MOSSO](#22-referente-2-mosso)
-  - [2.3. Referente 3](#23-referente-3)
+  - [2.3. Referente 3 SPECIALIZED](#23-referente-3-specialized)
   - [2.4. Referente 4](#24-referente-4)
   - [2.5. Referente 5](#25-referente-5)
   
@@ -21,15 +21,19 @@ Proyecto integrador DH - Market place
 
 ### 1.1. Descripción del producto o servicio
 
-ZZZ es una tienda en línea especializada en bicicletas y artículos de ciclismo. Nos enfocamos en que consigas las bicicletas y los accesorios que deseas, y un excelente servicio post venta. Nuestro objetivo es que disfrutes de una experiencia completa, ya sea que estés iniciando en el mundo del ciclismo o tengas tiempo disfrutando de una bicicleta y estés buscando opciones para ampliar tu experiencia en entornos urbanos, y no urbanos con la seguridad y calidad que mereces. Además de nuestros productos garantizados, podrás encontrar una sección de noticias sobre eventos de ciclismo y valiosos consejos que te servirán a la hora de elegir una bicicleta, renovar accesorios o darle a tu bicicleta actual el mantenimiento preventivo que necesita.
+Venta de artículos de ciclismo.
 
 ### 1.2. Nuestra audiencia objetivo
 
-Nuestra audiencia principal son los usuarios de la bicicleta, tanto usuarios con experiencia en las distintas modalidades de ciclismo, como los usuarios que recién se introducen en el mundo del ciclismo y desean hacerlo con artículos de calidad y seguridad garantizada. 
+Ciclistas
 
 ## 2. Inspiración en referentes del mercado
 
 ### 2.1. Referente 1 TREK 
+
+Call to action del hero. "Elige tu bicicleta"
+
+https://www.trekbikes.com/es/es_ES/bike-finder/
 
 Página de productos La forma en la que presenta un card en la versión celular.
 
@@ -47,18 +51,17 @@ http://www.mosso.com.tw/products.php?func=p_detail&p_id=238&pc_parent=12
 
 
 
-### 2.3. Referente 3
+### 2.3. Referente 3 SPECIALIZED
 
-Para poder realizar este desafío, se deben cumplir con los siguientes requisitos previos
+Carro de compras
 
-### 2.4. Referente 4
+### 2.4. Referente 4 
 
 Para poder realizar este desafío, se deben cumplir con los siguientes requisitos previos
 
 ### 2.5. Referente 5
 
-El header tiene opciones que se desglosan mostrando la información de manera clara e intuitiva.
-https://www.bullsbikesusa.com/
+Para poder realizar este desafío, se deben cumplir con los siguientes requisitos previos
 
 
 ## Lorena Tito Ramos
@@ -79,10 +82,17 @@ Contacto directo:
 
 ## Octavio Lafourcade
 
-MASc student in Data Science at Universidad Ricardo Palma. Bachelor’s degree in Economics at Universidad Peruana de Ciencias Aplicadas. I have more than three years of professional experience in the field of data science leading money laundering prediction models at the Financial Intelligence Unit (FIU) of Peru. Before joining the FIU, I worked for one year as an Insurance Supervisor at the Superintendency of banking insurance, and private pension funds (SBS). My area of focus was on implementing machine learning algorithms and advanced analytics for business solutions. I also have experience in the finance sector, the capital market, and Central Banking. I hold the CFA level 1 and several certifications in Machine Learning, SQL, Python, RStudio, and R. In addition, I also gained experience participating in competitions in which I was a finalist as in La Positiva’s hackathon.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
 
-Get in touch:
-[Github - Octavio Lafourcade](https://github.com/tavolafourcade)
+       http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
 
 ## Juan Carlos Silva Pereyra
 
