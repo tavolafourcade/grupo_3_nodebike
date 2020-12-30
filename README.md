@@ -57,7 +57,8 @@ Para poder realizar este desafío, se deben cumplir con los siguientes requisito
 
 ### 2.5. Referente 5
 
-Para poder realizar este desafío, se deben cumplir con los siguientes requisitos previos
+El header tiene opciones que se desglosan mostrando la información de manera clara e intuitiva.
+https://www.bullsbikesusa.com/
 
 
 ## Lorena Tito Ramos
@@ -78,17 +79,10 @@ Contacto directo:
 
 ## Octavio Lafourcade
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
+MASc student in Data Science at Universidad Ricardo Palma. Bachelor’s degree in Economics at Universidad Peruana de Ciencias Aplicadas. I have more than three years of professional experience in the field of data science leading money laundering prediction models at the Financial Intelligence Unit (FIU) of Peru. Before joining the FIU, I worked for one year as an Insurance Supervisor at the Superintendency of banking insurance, and private pension funds (SBS). My area of focus was on implementing machine learning algorithms and advanced analytics for business solutions. I also have experience in the finance sector, the capital market, and Central Banking. I hold the CFA level 1 and several certifications in Machine Learning, SQL, Python, RStudio, and R. In addition, I also gained experience participating in competitions in which I was a finalist as in La Positiva’s hackathon.
 
-       http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+Get in touch:
+[Linkedin - Octavio Lafourcade](https://github.com/tavolafourcade)
 
 ## Juan Carlos Silva Pereyra
 
