@@ -5,8 +5,8 @@ Proyecto integrador DH - Market place
   - [1.1. Descripción del producto o servicio](#12-descripcion-del-producto-o-servicio)
   - [1.2. Nuestra audiencia objetivo](#12-nuestra-audiencia-objetivo)
 - [2. Inspiración en referentes del mercado](#2-inspiración-en-referentes-del-mercado)
-  - [2.1. Referente 1](#21-referente-1)
-  - [2.2. Referente 2](#22-referente-2)
+  - [2.1. Referente 1 TREK](#21-referente-1-trek)
+  - [2.2. Referente 2 MOSSO](#22-referente-2-mosso)
   - [2.3. Referente 3](#23-referente-3)
   - [2.4. Referente 4](#24-referente-4)
   - [2.5. Referente 5](#25-referente-5)
@@ -21,21 +21,31 @@ Proyecto integrador DH - Market place
 
 ### 1.1. Descripción del producto o servicio
 
-Para poder realizar este desafío, se deben cumplir con los siguientes requisitos previos
+Venta de artículos de ciclismo.
 
 ### 1.2. Nuestra audiencia objetivo
 
-Para poder realizar este desafío, se deben cumplir con los siguientes requisitos previos
+Ciclistas
 
 ## 2. Inspiración en referentes del mercado
 
-### 2.1. Referente 1
+### 2.1. Referente 1 TREK 
 
-Para poder realizar este desafío, se deben cumplir con los siguientes requisitos previos
+Página de productos La forma en la que presenta un card en la versión celular.
 
-### 2.2. Referente 2
+https://www.trekbikes.com/us/en_US/bikes/c/B100/?pageSize=24&q=%3Arelevance%3AnewFlag%3ANEW#
 
-Para poder realizar este desafío, se deben cumplir con los siguientes requisitos previos
+Carrete de fotos del detalle de producto: El carrete de fotos que presenta y su detalle de las partes. Presentación de la bicicleta, resaltando funcionalidades. Menú de opcciones y actualización de opción mientrs vas haciendo sroll.
+
+https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-sl/domane-sl-6/p/28313/?colorCode=red
+
+### 2.2. Referente 2 MOSSO
+
+Detalle de producto, específicamente la forma en la  que presenta las especificaciones técnicas
+
+http://www.mosso.com.tw/products.php?func=p_detail&p_id=238&pc_parent=12
+
+
 
 ### 2.3. Referente 3
 
@@ -48,6 +58,7 @@ Para poder realizar este desafío, se deben cumplir con los siguientes requisito
 ### 2.5. Referente 5
 
 Para poder realizar este desafío, se deben cumplir con los siguientes requisitos previos
+
 
 ## Lorena Tito Ramos
 
