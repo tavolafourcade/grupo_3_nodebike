@@ -84,6 +84,9 @@ Contacto directo:
 
 MASc student in Data Science at Universidad Ricardo Palma. Bachelor’s degree in Economics at Universidad Peruana de Ciencias Aplicadas. I have more than three years of professional experience in the field of data science leading money laundering prediction models at the Financial Intelligence Unit (FIU) of Peru. Before joining the FIU, I worked for one year as an Insurance Supervisor at the Superintendency of banking insurance, and private pension funds (SBS). My area of focus was on implementing machine learning algorithms and advanced analytics for business solutions. I also have experience in the finance sector, the capital market, and Central Banking. I hold the CFA level 1 and several certifications in Machine Learning, SQL, Python, RStudio, and R. In addition, I also gained experience participating in competitions in which I was a finalist as in La Positiva’s hackathon.
 
+Redes sociales:
+- [Github - Octavio Lafourcade](https://github.com/tavolafourcade)
+
 ## Juan Carlos Silva Pereyra
 
 Licensed under the Apache License, Version 2.0 (the "License");
