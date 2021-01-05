@@ -68,25 +68,24 @@ https://www.bullsbikesusa.com/
 
 ## Lorena Tito Ramos
 
-Ingeniera Industrial, Peruana - 24 años (Apodo: "Lore").
-Conocimientos en Gestión de Procesos, Ux Design y estudiante de Desarrollo Web Full Stack.
-Poseo 03 años de experiencia en áreas distintas como ingeniería, procesos y compras en el sector de construcción y consultoría. Soy una profesional dedicada, capaz y creativa.
-Primeramente, he evaluado la factibilidad del desarrollo de productos derivados o nuevos productos solicitados por el área de nuevos negocios. Adicionalmente, he dado seguimiento del comportamiento de proveedores y evaluado otras opciones con el fin de reducir costos en la compañía, manteniendo la calidad de servicio y producto. Finalmente, he brindado soporte a las áreas operativas para poder asegurar la continuidad de las operaciones.
-Interés en Lean Analytics & Tecnologías Disruptivas.
+Industrial Engineer, Peruvian - 24 years old 
+Designing workflow and user experiencies for "people" to make them enjoy the process and not just results. 
+I'm a Junior Industrial Engineer with three years of experience that includes two years as a trainee developing processes and one-year assisting product development. First, I examined new supplies for low manufacturing costs. Additionally, I supervised the development of new products to extend the catalog. Finally, I analyzed new solutions to everyday problems that concerned the engineering area in the plant.
+My skills include prototyping programs to design digital interfaces, supervising, communicating, analyzing data (SQL, MySql), AutoCad (Basic), English (Advanced), and Spanish (Native).
 
-Redes sociales:
+Social Networks:
 - [Linkedin - Lorena Tito Ramos](https://www.linkedin.com/in/lorenatitoramos/)
 - [Github - Elloisa](https://github.com/Elloisa)
 - [Twitter - @10lore05](https://twitter.com/10lore05)
 
-Contacto directo:
+Direct Contact:
        lorena.tito.ramos@gmail.com / lorena10051996@hotmail.com -  +51 954 751 149
 
 ## Octavio Lafourcade
 
 MASc student in Data Science at Universidad Ricardo Palma. Bachelor’s degree in Economics at Universidad Peruana de Ciencias Aplicadas. I have more than three years of professional experience in the field of data science leading money laundering prediction models at the Financial Intelligence Unit (FIU) of Peru. Before joining the FIU, I worked for one year as an Insurance Supervisor at the Superintendency of banking insurance, and private pension funds (SBS). My area of focus was on implementing machine learning algorithms and advanced analytics for business solutions. I also have experience in the finance sector, the capital market, and Central Banking. I hold the CFA level 1 and several certifications in Machine Learning, SQL, Python, RStudio, and R. In addition, I also gained experience participating in competitions in which I was a finalist as in La Positiva’s hackathon.
 
-Redes sociales:
+Social Networks:
 - [Github - Octavio Lafourcade](https://github.com/tavolafourcade)
 
 ## Juan Carlos Silva Pereyra
