@@ -39,7 +39,7 @@ Página de productos La forma en la que presenta un card en la versión celular.
 
 https://www.trekbikes.com/us/en_US/bikes/c/B100/?pageSize=24&q=%3Arelevance%3AnewFlag%3ANEW#
 
-Carrete de fotos del detalle de producto: El carrete de fotos que presenta y su detalle de las partes. Presentación de la bicicleta, resaltando funcionalidades. Menú de opcciones y actualización de opción mientrs vas haciendo sroll.
+Carrete de fotos del detalle de producto: El carrete de fotos que presenta y su detalle de las partes. Presentación de la bicicleta, resaltando funcionalidades. Menú de opcciones y actualización de opción mientrs vas haciendo scroll.
 
 https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-sl/domane-sl-6/p/28313/?colorCode=red
 
