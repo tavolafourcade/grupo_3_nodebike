@@ -8,7 +8,7 @@ Proyecto integrador DH - Market place
   - [2.1. Referente 1 TREK](#21-referente-1-trek)
   - [2.2. Referente 2 MOSSO](#22-referente-2-mosso)
   - [2.3. Referente 3 SPECIALIZED](#23-referente-3-specialized)
-  - [2.4. Referente 4](#24-referente-4)
+  - [2.4. Referente 4 SAGA FALABELLA](#24-referente-4-saga-falabella)
   - [2.5. Referente 5](#25-referente-5)
   
 ## Integrantes del equipo
@@ -55,9 +55,11 @@ http://www.mosso.com.tw/products.php?func=p_detail&p_id=238&pc_parent=12
 
 Carro de compras
 
-### 2.4. Referente 4 
+### 2.4. Referente 4 SAGA FALABELLA
 
-Para poder realizar este desafío, se deben cumplir con los siguientes requisitos previos
+Registro de cuenta usuario
+
+https://www.falabella.com.pe/falabella-pe/myaccount/register.jsp
 
 ### 2.5. Referente 5
 
