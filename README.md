@@ -1,4 +1,4 @@
-# grupo_3_sinnombre | Market Place DH
+# grupo_3_nodeBike | Market Place DH
 Proyecto integrador DH - Market place
 
 - [1. Definición de temática del market place](#1-definición-de-tematica-del-market-place)
