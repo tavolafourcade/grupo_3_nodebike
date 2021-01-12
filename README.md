@@ -31,6 +31,8 @@ Ciclistas.
 
 ## 2. Inspiración en referentes del mercado
 
+Link de prototipo: https://www.figma.com/file/BrVcB5Ih29iema1xPjrZaN/Untitled?node-id=0%3A1
+
 ### 2.1. Referente 1 TREK 
 
 Call to action del hero. "Elige tu bicicleta"
