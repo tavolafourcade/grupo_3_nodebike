@@ -94,18 +94,7 @@ Social Networks:
 
 ## Juan Carlos Silva Pereyra
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-       http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-
-
-
-
+I have a Bachelor's degree in Political Science from Federico Villarreal National University. Currently, I am an MSc student in Technology Project Management at the International University of Rioja. I am also studying an Information Systems Development career at IDAT. I have an ACA (Alibaba Cloud Certification Associate) in Cloud Security and multiple “Clouder” Certifications from the same cloud service provider, a CompTIA IT Fundamentals certification, and a Scrum Foundation Professional Certificate (SFPC), as well as training courses at the Congress of the Republic of Peru. I have more than five years of experience in public and private sectors doing advisory work, participating in social projects, team management, teaching, training and popularization in science, technology, and citizen participation, among other responsibilities. I am currently holding an ad honorem position as vice president of the Peruvian Cyclists Association – ACIPER, having achieved, among other things, the formulation and approval of a bicycle promotion law. Now, I am initiating a new project called "Katari Cloud" to provide hosting services and other SaaS services. I was part of the team who won second place in the "Hackathon Electoral" (2018), organized by the National Jury of Elections (JNE).  
+Enthusiastic cyclist and harmonica blower.
+Social Networks:
+- [Linkedin - Juan Carlos Alonso Silva Pereyra](https://www.linkedin.com/in/juan-carlos-alonso-silva-pereyra-a1a359200/)
