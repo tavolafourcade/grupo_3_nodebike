@@ -9,7 +9,7 @@ Proyecto integrador DH - Market place
   - [2.2. Referente 2 MOSSO](#22-referente-2-mosso)
   - [2.3. Referente 3 SPECIALIZED](#23-referente-3-specialized)
   - [2.4. Referente 4 SAGA FALABELLA](#24-referente-4-saga-falabella)
-  - [2.5. Referente 5](#25-referente-5)
+  - [2.5. Referente 5 BULLS](#25-referente-5-bulls)
   
 ## Integrantes del equipo
 
@@ -23,9 +23,11 @@ Proyecto integrador DH - Market place
 
 Venta de artículos de ciclismo.
 
+Wireflow: https://miro.com/app/board/o9J_ladR_jE=/
+
 ### 1.2. Nuestra audiencia objetivo
 
-Ciclistas
+Ciclistas.
 
 ## 2. Inspiración en referentes del mercado
 
@@ -61,7 +63,7 @@ Registro de cuenta usuario
 
 https://www.falabella.com.pe/falabella-pe/myaccount/register.jsp
 
-### 2.5. Referente 5
+### 2.5. Referente 5 BULLS
 
 El header tiene opciones que se desglosan mostrando la información de manera clara e intuitiva. 
 https://www.bullsbikesusa.com/
