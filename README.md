@@ -39,7 +39,7 @@ Call to action del hero. "Elige tu bicicleta"
 
 https://www.trekbikes.com/es/es_ES/bike-finder/
 
-Página de productos La forma en la que presenta un card en la versión celular.
+Página de productos. La forma en la que presenta un card en la versión celular.
 
 https://www.trekbikes.com/us/en_US/bikes/c/B100/?pageSize=24&q=%3Arelevance%3AnewFlag%3ANEW#
 
@@ -49,7 +49,7 @@ https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/doman
 
 ### 2.2. Referente 2 MOSSO
 
-Detalle de producto, específicamente la forma en la  que presenta las especificaciones técnicas
+Detalle de producto, específicamente la forma en la  que presenta las especificaciones técnicas.
 
 http://www.mosso.com.tw/products.php?func=p_detail&p_id=238&pc_parent=12
 
@@ -57,11 +57,11 @@ http://www.mosso.com.tw/products.php?func=p_detail&p_id=238&pc_parent=12
 
 ### 2.3. Referente 3 SPECIALIZED
 
-Carro de compras
+Carro de compras.
 
 ### 2.4. Referente 4 SAGA FALABELLA
 
-Registro de cuenta usuario
+Registro de cuenta usuario.
 
 https://www.falabella.com.pe/falabella-pe/myaccount/register.jsp
 
