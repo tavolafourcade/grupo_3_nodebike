@@ -1,4 +1,4 @@
-# grupo_3_sinnombre | Market Place DH
+# grupo_3_nodebike | Market Place DH
 Proyecto integrador DH - Market place
 
 - [1. Definición de temática del market place](#1-definición-de-tematica-del-market-place)
@@ -31,13 +31,15 @@ Ciclistas.
 
 ## 2. Inspiración en referentes del mercado
 
+Link de prototipo: https://www.figma.com/file/BrVcB5Ih29iema1xPjrZaN/Untitled?node-id=0%3A1
+
 ### 2.1. Referente 1 TREK 
 
 Call to action del hero. "Elige tu bicicleta"
 
 https://www.trekbikes.com/es/es_ES/bike-finder/
 
-Página de productos La forma en la que presenta un card en la versión celular.
+Página de productos. La forma en la que presenta un card en la versión celular.
 
 https://www.trekbikes.com/us/en_US/bikes/c/B100/?pageSize=24&q=%3Arelevance%3AnewFlag%3ANEW#
 
@@ -47,7 +49,7 @@ https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/doman
 
 ### 2.2. Referente 2 MOSSO
 
-Detalle de producto, específicamente la forma en la  que presenta las especificaciones técnicas
+Detalle de producto, específicamente la forma en la  que presenta las especificaciones técnicas.
 
 http://www.mosso.com.tw/products.php?func=p_detail&p_id=238&pc_parent=12
 
@@ -55,11 +57,11 @@ http://www.mosso.com.tw/products.php?func=p_detail&p_id=238&pc_parent=12
 
 ### 2.3. Referente 3 SPECIALIZED
 
-Carro de compras
+Carro de compras.
 
 ### 2.4. Referente 4 SAGA FALABELLA
 
-Registro de cuenta usuario
+Registro de cuenta usuario.
 
 https://www.falabella.com.pe/falabella-pe/myaccount/register.jsp
 
@@ -92,18 +94,7 @@ Social Networks:
 
 ## Juan Carlos Silva Pereyra
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-       http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-
-
-
-
+I have a Bachelor's degree in Political Science from Federico Villarreal National University. Currently, I am an MSc student in Technology Project Management at the International University of Rioja. I am also studying an Information Systems Development career at IDAT. I have an ACA (Alibaba Cloud Certification Associate) in Cloud Security and multiple “Clouder” Certifications from the same cloud service provider, a CompTIA IT Fundamentals certification, and a Scrum Foundation Professional Certificate (SFPC), as well as training courses at the Congress of the Republic of Peru. I have more than five years of experience in public and private sectors doing advisory work, participating in social projects, team management, teaching, training and popularization in science, technology, and citizen participation, among other responsibilities. I am currently holding an ad honorem position as vice president of the Peruvian Cyclists Association – ACIPER, having achieved, among other things, the formulation and approval of a bicycle promotion law. Now, I am initiating a new project called "Katari Cloud" to provide hosting services and other SaaS services. I was part of the team who won second place in the "Hackathon Electoral" (2018), organized by the National Jury of Elections (JNE).  
+Enthusiastic cyclist and harmonica blower.
+Social Networks:
+- [Linkedin - Juan Carlos Alonso Silva Pereyra](https://www.linkedin.com/in/juan-carlos-alonso-silva-pereyra-a1a359200/)
