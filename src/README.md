@@ -17,21 +17,23 @@ Proyecto integrador DH - Market place
 - [Octavio Lafourcade](#octavio-lafourcade)
 - [Juan Carlos Silva Pereyra](#juan-carlos-silva-pereyra)
 
+## Herramientas de trabajo
+
+Tablero de trabajo: https://trello.com/invite/b/DErNLfg6/8de386a60ea8b7b0da43bda435f5695e/proyecto-integrador-dh
+Wireflow: https://miro.com/app/board/o9J_ladR_jE=/
+Link de prototipo: https://www.figma.com/file/BrVcB5Ih29iema1xPjrZaN/Untitled?node-id=0%3A1
+
 ## 1. Definición de temática del market  place
 
 ### 1.1. Descripción del producto o servicio
 
 Venta de artículos de ciclismo.
 
-Wireflow: https://miro.com/app/board/o9J_ladR_jE=/
-
 ### 1.2. Nuestra audiencia objetivo
 
 Ciclistas.
 
 ## 2. Inspiración en referentes del mercado
-
-Link de prototipo: https://www.figma.com/file/BrVcB5Ih29iema1xPjrZaN/Untitled?node-id=0%3A1
 
 ### 2.1. Referente 1 TREK 
 
@@ -52,8 +54,6 @@ https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/doman
 Detalle de producto, específicamente la forma en la  que presenta las especificaciones técnicas.
 
 http://www.mosso.com.tw/products.php?func=p_detail&p_id=238&pc_parent=12
-
-
 
 ### 2.3. Referente 3 SPECIALIZED
 
