@@ -1,0 +1,24 @@
+{
+  "name": "grupo_3_nodebike",
+  "version": "1.0.0",
+  "main": "appNodeBike.js",
+  "scripts": {
+    "start": "nodemon appNodeBike.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Elloisa/grupo_3_nodeBike.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Elloisa/grupo_3_nodeBike/issues"
+  },
+  "homepage": "https://github.com/Elloisa/grupo_3_nodeBike#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
