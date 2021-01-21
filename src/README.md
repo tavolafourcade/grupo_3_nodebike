@@ -19,9 +19,9 @@ Proyecto integrador DH - Market place
 
 ## Herramientas de trabajo
 
-Tablero de trabajo: https://trello.com/invite/b/DErNLfg6/8de386a60ea8b7b0da43bda435f5695e/proyecto-integrador-dh
-Wireflow: https://miro.com/app/board/o9J_ladR_jE=/
-Link de prototipo: https://www.figma.com/file/BrVcB5Ih29iema1xPjrZaN/Untitled?node-id=0%3A1
+- Tablero de trabajo: https://trello.com/invite/b/DErNLfg6/8de386a60ea8b7b0da43bda435f5695e/proyecto-integrador-dh
+- Wireflow: https://miro.com/app/board/o9J_ladR_jE=/
+- Link de prototipo: https://www.figma.com/file/BrVcB5Ih29iema1xPjrZaN/Untitled?node-id=0%3A1
 
 ## 1. Definición de temática del market  place
 
