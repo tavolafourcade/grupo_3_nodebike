@@ -8,17 +8,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Elloisa/grupo_3_nodeBike.git"
+    "url": "git+https://github.com/Elloisa/grupo_3_nodebike.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Elloisa/grupo_3_nodeBike/issues"
+    "url": "https://github.com/Elloisa/grupo_3_nodebike/issues"
   },
-  "homepage": "https://github.com/Elloisa/grupo_3_nodeBike#readme",
+  "homepage": "https://github.com/Elloisa/grupo_3_nodebike#readme",
   "description": "",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }
