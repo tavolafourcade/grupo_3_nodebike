@@ -41,7 +41,7 @@ En este punto exponemos aquellas practicas que a pesar de ser [Less of] pues pod
 Conclusiones
 ---------------------------
 * fergrgtrtrhtrh
- * ereghhtht
+*ereghhtht
 * ggrgrthrh
 
 
