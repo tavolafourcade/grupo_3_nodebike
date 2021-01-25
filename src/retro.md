@@ -11,6 +11,32 @@
 
  ### 1. Start doing
 Aquí van todas aquellas cosas innovadoras o que por cierta curiosidad queremos probar. O tal vez son soluciones comprobadas que notamos que deberíamos usar. Por ejemplo usar una wiki para la comunicación o repositorio interno.
+
+Anotaciones
+---------------------------
+```html
+<html>
+    <head>
+        <title>Título del sitio Web</title>
+    </head>
+    <body>
+       Hola. Éste es un párrafo de texto incluido en un bloque de cita. Fíjate que tengo una sangría con respecto al margen izquierdo.
+    </body>
+</html>
+```
+
+```html
+<html>
+    <head>
+        <title>Título del sitio Web</title>
+    </head>
+    <body>
+       Hola. Éste es un párrafo de texto incluido en un bloque de cita. Fíjate que tengo una sangría con respecto al margen izquierdo.
+    </body>
+</html>
+```
+ 
+ 
  
  ### 2. More of
 Es decir que los [Start Doing] se convertirán en [More of]. Esto significa aquellas cosas que estamos usando o haciendo y que queremos que mejoren. Son practicas que creemos que requiere mas refinamiento y que nos gustan mucho por ello hay que darles mas.
