@@ -15,20 +15,14 @@ Aquí van todas aquellas cosas innovadoras o que por cierta curiosidad queremos 
 Anotaciones
 ---------------------------
 ```html
-*dffvdffdff
-*fdfdgg
- *ddgdgdfg
+- rergrgrgerg
+- ergrgrrtrth
+- rthrhrth
 ```
 
 ```html
-<html>
-    <head>
-        <title>Título del sitio Web</title>
-    </head>
-    <body>
-       Hola. Éste es un párrafo de texto incluido en un bloque de cita. Fíjate que tengo una sangría con respecto al margen izquierdo.
-    </body>
-</html>
+- gergergeregereg
+- rergrgrg
 ```
  
  
