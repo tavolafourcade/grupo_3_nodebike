@@ -12,8 +12,7 @@
  ### 1. Start doing
 Aquí van todas aquellas cosas innovadoras o que por cierta curiosidad queremos probar. O tal vez son soluciones comprobadas que notamos que deberíamos usar. Por ejemplo usar una wiki para la comunicación o repositorio interno.
 
-Anotaciones
----------------------------
+
 ```html
 - rergrgrgerg
 - ergrgrrtrth
@@ -38,3 +37,12 @@ En este punto ponemos aquello que tal vez en una retrospectiva fue [Start Doing]
  
  ### 5. Stop doing
 En este punto exponemos aquellas practicas que a pesar de ser [Less of] pues podemos eliminarlas. Cuando el equipo ve que no le da valor o simplemente no le gusta una practica puede optar por eliminarla.
+
+Conclusiones
+---------------------------
+* fergrgtrtrhtrh
+ * ereghhtht
+* ggrgrthrh
+
+
+
