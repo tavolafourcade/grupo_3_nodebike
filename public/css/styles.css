@@ -1,0 +1,49 @@
+:root {
+  --primary: #263238;
+  --primary-light: #4f5b62;
+  --primary-dark: #000a12;
+  --secondary: #dd2c00;
+  --secondary-light: #ff6434;
+  --secondary-dark: #a30000;
+  --font-family: "Varela", sans-serif;
+  --h5: 25px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  box-sizing: border-box;
+}
+
+/**********/
+/* HEADER */
+/**********/
+
+.main-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: var(--primary-dark);
+  font-family: var(--font-family);
+  font-size: var(--h5);
+  line-height: var(--h5);
+}
+
+.navigation-menu {
+  display: none;
+}
+
+.burger {
+  color: white;
+}
+
+.brand-name {
+  color: white;
+}
+
+.fa-shopping-cart {
+  color: white;
+}
