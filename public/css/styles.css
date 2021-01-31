@@ -86,7 +86,8 @@ body {
 
 .category-item .image img {
   width: 320px;
-  height: auto;
+  height: 280px;
+  object-fit: cover;
 }
 
 @media (min-width: 1024px) {
@@ -131,6 +132,6 @@ body {
 
   .category-item .image img {
     width: 400px;
-    height: auto;
+    height: 340;
   }
 }
