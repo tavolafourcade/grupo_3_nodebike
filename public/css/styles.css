@@ -7,6 +7,10 @@
   --secondary-dark: #a30000;
   --font-family: "Varela", sans-serif;
   --h5: 25px;
+  --h4: 35px;
+  --h3: 50px;
+
+  --subtitle-1: ;
 }
 
 * {
@@ -46,4 +50,42 @@ body {
 
 .fa-shopping-cart {
   color: white;
+}
+
+#active {
+  color: var(--secondary-light);
+}
+
+@media (min-width: 1024px) {
+  .main-header {
+    padding: 30px;
+  }
+  .menu {
+    display: none;
+  }
+
+  .navigation-menu {
+    display: flex;
+  }
+
+  .navigation-menu ul {
+    display: flex;
+  }
+
+  .navigation-menu li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .navigation-menu li a {
+    color: white;
+    font-size: 12px;
+  }
+
+  .page {
+    margin: 0 30px;
+  }
 }
