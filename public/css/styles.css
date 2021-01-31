@@ -6,11 +6,14 @@
   --secondary-light: #ff6434;
   --secondary-dark: #a30000;
   --font-family: "Varela", sans-serif;
+  --h6: 21px;
   --h5: 25px;
   --h4: 35px;
   --h3: 50px;
-
-  --subtitle-1: ;
+  --subtitle-1: 17px;
+  --body1: 15px;
+  --body2: 13px;
+  --caption: 11px;
 }
 
 * {
@@ -46,6 +49,8 @@ body {
 
 .brand-name {
   color: white;
+
+  font-size: var(--h5);
 }
 
 .fa-shopping-cart {
@@ -77,10 +82,11 @@ body {
 .category-item .category-title {
   display: flex;
   justify-content: center;
-  padding: 5px 0;
+  padding: 10px 0;
   color: white;
   background-color: var(--secondary-dark);
   font-family: var(--font-family);
+  font-size: var(--h6);
   border-radius: 5px 5px 0px 0px;
 }
 
@@ -88,6 +94,102 @@ body {
   width: 320px;
   height: 280px;
   object-fit: cover;
+}
+
+/**********/
+/* FOOTER */
+/**********/
+
+footer {
+  background-color: var(--primary-dark);
+  color: white;
+}
+.footer-container {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-title {
+  display: flex;
+  justify-content: center;
+  font-family: var(--font-family);
+  font-size: var(--h6);
+  margin-bottom: 10px;
+}
+
+.footer-title span {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-description {
+  margin-bottom: 10px;
+  font-family: var(--font-family);
+  font-size: var(--body1);
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-family);
+}
+
+form div input {
+  border: 0px;
+}
+#label-email {
+  margin-bottom: 5px;
+  font-size: var(--subtitle-1);
+}
+
+#emailAddress {
+  line-height: var(--h4);
+
+  border-radius: 10px;
+}
+
+.checkbox {
+  margin: 5px 0;
+}
+.checkbox label input {
+  margin-right: 20px;
+}
+
+#checkbox-text {
+  font-size: 11px;
+}
+
+#checkbox-input {
+  font-size: 3px;
+}
+
+.footer-details {
+  font-size: var(--body2);
+  margin-bottom: 20px;
+}
+
+#subscribe {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  color: var(--body2);
+  justify-content: center;
+  background-color: var(--secondary-light);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.networks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.networks i {
+  color: var(--primary-light);
+  margin: 20px 10px;
 }
 
 @media (min-width: 1024px) {
@@ -133,5 +235,25 @@ body {
   .category-item .image img {
     width: 400px;
     height: 340;
+  }
+
+  /**********/
+  /* FOOTER */
+  /**********/
+
+  .footer-container {
+    padding: 60px 30% 30px;
+  }
+
+  .footer-title {
+    margin-bottom: 30px;
+  }
+
+  .footer-description {
+    margin-bottom: 20px;
+  }
+
+  .footer-details {
+    margin-bottom: 40px;
   }
 }

@@ -94,37 +94,40 @@
 
             <div class="footer-main">
                 <div class="footer-title">
-                REGÍSTRATE A NUESTRO CATÁLOGO
+                <span>REGÍSTRATE A NUESTRO CATÁLOGO</span>
                 </div>
                 <div class="footer-description">Obtén ofertas especiales, productos exclusivos e información de eventos en tu inbox.</div>
             </div>
 
             <div class="form-section">
-                <form action="">
+                <form action="" method="get">
                     <div>
-                        <label for="email">Email</label>
-                        <input type="email" id="emailAddress" placeholder="Ingrese su email">
+                        <label for="emailAddress" id="label-email">Email</label>
+                        <input type="email" id="emailAddress">
                     </div>
 
                     <div class="checkbox">
                         <label>
-                            <input type="checkbox" name="intereses">Ver Políticas de Privacidad & Términos
-                          </label>
+                            <input type="checkbox" name="intereses">
+                            <span id="checkbox-text">
+                                Ver Políticas de Privacidad & Términos
+                            </span>
+                        </label>
                     </div>
 
-                    <div>
+                    <div class="footer-details">
                         <p>Al suscribirse recibirá las últimas noticias y eventos asociados al mundo del ciclismo; según la Política de Privacidad & Términos.</p>
                     </div>
 
                     <div>
-                        <a href="#" id="Subscribe">Suscríbete</a>
+                        <a href="#" id="subscribe">SUSCRÍBETE</a>
                     </div>
 
                     <div class="networks">
-                        <i class="fab fa-facebook-square"></i>
-                        <i class="fab fa-twitter-square"></i>
-                        <i class="fab fa-instagram-square"></i>
-                        <i class="fab fa-youtube-square"></i>
+                        <i class="fab fa-facebook-square fa-2x"></i>
+                        <i class="fab fa-twitter-square fa-2x"></i>
+                        <i class="fab fa-instagram-square fa-2x"></i>
+                        <i class="fab fa-youtube-square fa-2x"></i>
                     </div>
                     
                 </form>
@@ -132,7 +135,6 @@
             
         </div>
     </footer>
-
     <!-- End of Footer -->
 
 </body>
