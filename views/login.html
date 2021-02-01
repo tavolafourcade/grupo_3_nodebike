@@ -6,8 +6,68 @@
     <title>Login</title>
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://kit.fontawesome.com/89c6b6c230.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Varela&display=swap" rel="stylesheet">
 </head>
 <body>
-    Estás en la vista "Inicia sesión"
+    <!-- Header -->
+    <header>
+        <div class="main-header">
+            <div class="menu">
+                <i class="fa fa-bars burger"></i>
+            </div>
+
+            <div>
+                <span class="brand-name">Node Bike</span>
+            </div>
+            <nav class="navigation-menu">
+                <ul>
+                    <li class="page"><a href="/">Home</a></li>
+                    <li class="page"><a href="#" >Categorías</a></li>
+                    <li class="page"><a href="/productCart">Carro de Compras</a></li>
+                    <li class="page"><a href="/register">Crear Cuenta</a></li>
+                    <li class="page active"><a href="/login" id="active">Iniciar Sesión</a></li>
+                </ul>
+            </nav>
+
+            <div class="cart">
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+        </div>
+    </header>
+    <!-- End of header -->
+
+     <!-- Form section -->
+     <section>
+        <span><a href="/"><i class="fas fa-chevron-left"></i></a></span>
+        <span>Crear una cuenta</span>
+        <p>Completa tus datos personales</p>
+
+     <form class="main-form" action="/" method="GET">
+     <div class="control-formulario">
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" placeholder="ejemplo@nodebike.com.pe" required>
+    </div>
+
+    <div class="control-formulario">
+        <label for="contraseña">Clave</label><br>
+        <input type="password" name="password" id="contraseña" class="control" minlength="7" pattern="[^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$
+        ]" title="La contraseña debe contener valores alfanuméricos, no se aceptan mayúsculas y se aceptan un mínimo de 7 caracteres" required>
+    </div>
+
+    <div class="control-formulario">
+        <input type="checkbox" name="guardarContrasenha" value="guardarContrasenha" checked>Recordar usuario y contraseña<br>
+        </div>
+
+    <div class="button"><button type="submit" class="boton-formulario">INICIAR SESIÓN</button></div>
+
+
+</form>
+</section>
+     <!--End form section-->
+
+
+
 </body>
 </html>
