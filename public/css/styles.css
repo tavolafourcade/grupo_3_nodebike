@@ -259,13 +259,18 @@ form div input {
 }
 
   /**********/
-  /* FORM */
+  /* REGISTER */
   /**********/
 
-  .form{
-    background-image: url("./images/background-form.jpg");
+  .reg-form{
+    /*background-image: url("./images/background-form.jpg");*/
+    background-color: green; /*Se debe poner una imagen, pero no lo lee */
   }
 
   .main-form{
     background-color: var(--primary)
   }
+
+   /**********/
+  /* PRODUCTCART */
+  /**********/
