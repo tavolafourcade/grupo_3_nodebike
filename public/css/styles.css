@@ -257,3 +257,15 @@ form div input {
     margin-bottom: 40px;
   }
 }
+
+  /**********/
+  /* FORM */
+  /**********/
+
+  .form{
+    background-image: url("./images/background-form.jpg");
+  }
+
+  .main-form{
+    background-color: var(--primary)
+  }
