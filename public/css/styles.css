@@ -280,6 +280,7 @@ form div input {
     /*background-image: url("./images/background-form.jpg");*/
     background-color: green; /*Se debe poner una imagen, pero no lo lee */
     color:white;
+    font-family: var(--font-family2);
     
     
   }
@@ -291,20 +292,32 @@ form div input {
 
   #back-sign{
     color: white;
+    width: 12px;
+    height: 20px;
   }
   
   .title-form{
+   
     justify-content: center;
     font-size: var(--h6);
-    letter-spacing: 0.15px;
+    letter-spacing: var(--h6-space);
+    font-family: var(--font-family1);
+    margin: auto;
+
   }
 
+  .first-line{
+    display: flex;
+    margin-bottom:18px;
+
+  }
 
   .main-form{
     background-color: var(--primary);
     width: 100%;
     /*margin-top: 60px;*/
     padding-bottom: 24px;
+
   }
 
   .control-formulario{
@@ -312,9 +325,10 @@ form div input {
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 18px;
-    padding-bottom: 18px;
-    border: solid 1px white;
     margin: auto;
+    font-family: var(--font-family2);
+    font-size:var(--body1);
+    letter-spacing: var(--body1-space);
    
   }
   .control-formulario>a{
@@ -331,18 +345,22 @@ form div input {
     letter-spacing: 0.5px;
 
   }
+  
 
   
   .primary-button{
     width: 90%;
     justify-content: center;
-    margin: auto;}
+    margin: auto;
+  }
   
   .boton-formulario{
     background-color:var(--secondary);
     color: white;
     border-radius: 8px;
     height: 55px;
+    font-size: var(--body2);
+    letter-spacing:var(--body2-space);
   }
 
    /**********/
