@@ -275,18 +275,26 @@ form div input {
   /**********/
   /* REGISTER */
   /**********/
+  /*.register{
+    background-image: url('../images/home-hero1.jpg');
+    background-attachment: fixed;
+
+  }*/
+  .body-form{
+    background-image: url('../images/background-form.jpg');
+    /*background-attachment: fixed;*/
+    background-size: cover;
+
+  }
 
   .reg-form{
-    /*background-image: url("./images/background-form.jpg");*/
-    background-color: green; /*Se debe poner una imagen, pero no lo lee */
+    /*background-color: green; /*Se debe poner una imagen, pero no lo lee */
     color:white;
     font-family: var(--font-family2);
-    
     
   }
 
   .header-form{
-    border: solid 1px white;
     padding: 21px 16px;
   }
 
@@ -331,8 +339,10 @@ form div input {
     letter-spacing: var(--body1-space);
    
   }
-  .control-formulario>a{
+  .line>a{
     color: white;
+    font-size: var(--body2);
+    letter-spacing:var(--body2-space);
   }
   .control-formulario>input,.control{
     height: 33px;
@@ -346,12 +356,22 @@ form div input {
 
   }
   
+  .line{
+    display: inline;
+    font-size: var(--body2);
+    letter-spacing:var(--body2-space);
+    
+  }
 
+  #line-1{
+    margin-bottom: 16px;
+  }
   
   .primary-button{
     width: 90%;
     justify-content: center;
     margin: auto;
+    margin-top: 24px;
   }
   
   .boton-formulario{
@@ -362,6 +382,18 @@ form div input {
     font-size: var(--body2);
     letter-spacing:var(--body2-space);
   }
+
+  @media(min-width:414px){
+    .main-form{
+      width: 414px;
+      margin: auto;
+      margin-bottom: 90px;
+    
+  }
+
+
+
+}
 
    /**********/
   /* PRODUCTCART */
