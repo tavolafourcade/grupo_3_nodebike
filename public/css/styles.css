@@ -5,15 +5,29 @@
   --secondary: #dd2c00;
   --secondary-light: #ff6434;
   --secondary-dark: #a30000;
-  --font-family: "Varela", sans-serif;
+  --font-family: 'Varela', sans-serif;
+  --font-family1: 'Varela Round', sans-serif;
+  --font-family2: 'Merriweather', serif;
   --h6: 21px;
+  --h6-space: 0.15px;
   --h5: 25px;
   --h4: 35px;
+  --h4-space: 0.25px;
   --h3: 50px;
   --subtitle-1: 17px;
+  --sub-1-space: 0.15px;
+  --subtitle-2: 15px;
+  --sub-2-space: 0.1px;
   --body1: 15px;
+  --body1-space: 0.5px;
   --body2: 13px;
+  --body2-space: 0.25px;
+  --button: 13px;
+  --button-space: 1.25px;
   --caption: 11px;
+  --caption-space: 0.4px;
+  --overline: 10ox;
+  --overline-space: 1.5px;
 }
 
 * {
@@ -265,10 +279,70 @@ form div input {
   .reg-form{
     /*background-image: url("./images/background-form.jpg");*/
     background-color: green; /*Se debe poner una imagen, pero no lo lee */
+    color:white;
+    
+    
   }
 
+  .header-form{
+    border: solid 1px white;
+    padding: 21px 16px;
+  }
+
+  #back-sign{
+    color: white;
+  }
+  
+  .title-form{
+    justify-content: center;
+    font-size: var(--h6);
+    letter-spacing: 0.15px;
+  }
+
+
   .main-form{
-    background-color: var(--primary)
+    background-color: var(--primary);
+    width: 100%;
+    /*margin-top: 60px;*/
+    padding-bottom: 24px;
+  }
+
+  .control-formulario{
+    width:90%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    border: solid 1px white;
+    margin: auto;
+   
+  }
+  .control-formulario>a{
+    color: white;
+  }
+  .control-formulario>input,.control{
+    height: 33px;
+    border-radius: 10px;
+    margin-top: none;
+  }
+
+  .control-formulario>label{
+    font-size: var(--body1);
+    letter-spacing: 0.5px;
+
+  }
+
+  
+  .primary-button{
+    width: 90%;
+    justify-content: center;
+    margin: auto;}
+  
+  .boton-formulario{
+    background-color:var(--secondary);
+    color: white;
+    border-radius: 8px;
+    height: 55px;
   }
 
    /**********/
