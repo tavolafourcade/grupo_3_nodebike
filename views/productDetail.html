@@ -49,13 +49,13 @@
             <span>Montañeras</span>
         </div>
 
-        <select name="filtro" class=""> <!--Objetivo es que te lleve a cada sección de la página-->
+        <select name="filtro" class="primary-filter"> <!--Objetivo es que te lleve a cada sección de la página-->
             <option value="inf-general" selected>INFORMACIÓN GENERAL</option>
             <option value="caracteristica">CARACTERÍSTICAS</option>
             <option value="especif-tec">ESPECIFICACIONES TÉCNICAS</option>
             <option value="tallaje">TALLAJE & AJUSTE</option>
             <option value="opinion">OPINIONES</option>
-        </select></div>
+        </select>
 
         <section class="inf-general-1">
             <div class="main-description">
@@ -84,7 +84,7 @@
                 <span><i class="fas fa-circle"></i></span>
                 <span><i class="fas fa-circle"></i></span><br>
                 <span>Talla: </span><br>
-                <select name="talla" class=""> <!--Objetivo es que te lleve a cada sección de la página-->
+                <select name="talla" class="sec-filter"> <!--Objetivo es que te lleve a cada sección de la página-->
                     <option value="inf-general" selected>Selecciones una talla</option>
                     <option value="S">S</option>
                     <option value="M">M</option>
@@ -253,7 +253,36 @@
         </section>
 
         <section class="opinion">
-            
+            <div>Opiniones</div>
+            <div class="calification">
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="far fa-star"></i></span>
+            </div>
+            <span><a href=""><u>07 opiniones</u></a></span>
+            <span>/</span>
+            <span><a href=""><u>Escribe tu opinión</u></a></span><br>
+            <select name="filtro" class="sec-filter"> 
+                <option value="inf-general" selected>Más relevantes</option>
+                <option value="caracteristica">Más recientes</option>
+            </select>
+            <div class="comment-box">
+                <div class="profile-image">
+                    <img src="./images/profile.jpg" alt="Profile picture">
+                </div>
+            <div>
+                <div><i class="fas fa-thumbs-up"></i>125</div>
+                <div><i class="fas fa-thumbs-down"></i>60</div>
+            </div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel excepturi repellendus voluptatum soluta culpa, temporibus inventore corporis fuga. Distinctio, porro quidem amet illum ab sit quisquam architecto est ex laudantium.</p>
+            <div class="carrusel-sign">
+                <span><i class="far fa-circle"></i></span>
+                <span><i class="fas fa-circle"></i></span>
+                <span><i class="fas fa-circle"></i></span>
+                </div>    
+        </div>
         </section>
 
 
