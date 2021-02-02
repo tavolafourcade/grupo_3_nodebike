@@ -6,8 +6,239 @@
     <title>ProductCart</title>
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://kit.fontawesome.com/89c6b6c230.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Varela&display=swap" rel="stylesheet">
 </head>
 <body>
-    Estás en la vista "Carro de productos"
+     <!-- Header -->
+     <header>
+        <div class="main-header">
+            <div class="menu">
+                <i class="fa fa-bars burger"></i>
+            </div>
+
+            <div>
+                <span class="brand-name">Node Bike</span>
+            </div>
+            <nav class="navigation-menu">
+                <ul>
+                    <li class="page"><a href="/">Home</a></li>
+                    <li class="page"><a href="#" >Categorías</a></li>
+                    <li class="page active"><a href="/productCart" id="active">Carro de Compras</a></li>
+                    <li class="page"><a href="/register">Crear Cuenta</a></li>
+                    <li class="page"><a href="/login">Iniciar Sesión</a></li>
+                </ul>
+            </nav>
+
+            <div class="cart">
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+        </div>
+    </header>
+    <!-- End of header -->
+
+       <!--Start of main body-->
+    <main class="body-productCart">
+        <section class="header-productCart">
+        <div class="bread-crumbs">
+            <span><a href="/"><i class="fas fa-chevron-left"></i></a></span>
+            <span>Home</span>
+            <span><i class="fas fa-angle-right"></i></span>
+            <span>Carro de compras</span>
+        </div>
+
+        <div class="button"><button type="submit" class="boton-formulario-secondary">ACTUALIZAR CARRO DE COMPRAS</button></div>
+        <div class="button"><button type="submit" class="boton-formulario-primary">COMPRAR</button></div>
+        
+        <div><u>Select all</u></div>
+        </section>
+
+        <section class="articlesToBuy">
+            <article class="article">
+                <div class="article-title">ITEM 1</div>
+                
+                <div class="article-image">
+                    <img src="./images/carrocompras-item1.jpg" alt="article image">
+                    <input type="checkbox" name="productToBuy" value="codeArticle" id="checkbox">
+                </div>
+                <div class="product-description">
+                    <div class="article-name">Artículo de nombre x</div>
+                    
+                    <div class="secondary-action">
+                        <div><i class="fas fa-pen"></i></div>
+                        <div><i class="fas fa-trash-alt"></i></div>
+                    </div>
+                    
+                    <div class="main-description">
+                        <span>Color: </span>
+                        <span><i class="fas fa-circle"></i></span> 
+                        <span>Rojo metalizado</span><br>
+                        <span>Talla de bicicleta: </span>
+                        <span>S3</span><br>
+                        <span>Precio por unidad: </span>
+                        <span>$500.00</span>
+                    </div>
+                </div>
+
+                    <div class="cantidad">
+                        <div class="div1"><i class="fas fa-minus"></i></div>
+                        <div class="div2">1</div>
+                        <div class="div1"><i class="fas fa-plus"></i></div>
+                    </div>
+                
+                <div class="product-cost">
+                    <span>Subtotal: </span>
+                    <span>$500.00</span><br>
+                    <span>Costos de envío: </span>
+                    <span>$9.00</span><br>
+                    <span>Importe total: </span>
+                    <span>$509.00</span>
+                </div>  
+
+            </article>
+            <article class="article">
+                <div class="article-title">ITEM 1</div>
+                
+                <div class="article-image">
+                    <img src="./images/carrocompras-item1.jpg" alt="article image">
+                    <input type="checkbox" name="productToBuy" value="codeArticle" id="checkbox">
+                </div>
+                <div class="product-description">
+                    <div class="article-name">Artículo de nombre x</div>
+                    
+                    <div class="secondary-action">
+                        <div><i class="fas fa-pen"></i></div>
+                        <div><i class="fas fa-trash-alt"></i></div>
+                    </div>
+                    
+                    <div class="main-description">
+                        <span>Color: </span>
+                        <span><i class="fas fa-circle"></i></span> 
+                        <span>Rojo metalizado</span><br>
+                        <span>Talla de bicicleta: </span>
+                        <span>S3</span><br>
+                        <span>Precio por unidad: </span>
+                        <span>$500.00</span>
+                    </div>
+                </div>
+
+                    <div class="cantidad">
+                        <div class="div1"><i class="fas fa-minus"></i></div>
+                        <div class="div2">1</div>
+                        <div class="div1"><i class="fas fa-plus"></i></div>
+                    </div>
+                
+                <div class="product-cost">
+                    <span>Subtotal: </span>
+                    <span>$500.00</span><br>
+                    <span>Costos de envío: </span>
+                    <span>$9.00</span><br>
+                    <span>Importe total: </span>
+                    <span>$509.00</span>
+                </div>  
+
+            </article>
+
+            <article class="article">
+                <div class="article-title">ITEM 1</div>
+                
+                <div class="article-image">
+                    <img src="./images/carrocompras-item1.jpg" alt="article image">
+                    <input type="checkbox" name="productToBuy" value="codeArticle" id="checkbox">
+                </div>
+                <div class="product-description">
+                    <div class="article-name">Artículo de nombre x</div>
+                    
+                    <div class="secondary-action">
+                        <div><i class="fas fa-pen"></i></div>
+                        <div><i class="fas fa-trash-alt"></i></div>
+                    </div>
+                    
+                    <div class="main-description">
+                        <span>Color: </span>
+                        <span><i class="fas fa-circle"></i></span> 
+                        <span>Rojo metalizado</span><br>
+                        <span>Talla de bicicleta: </span>
+                        <span>S3</span><br>
+                        <span>Precio por unidad: </span>
+                        <span>$500.00</span>
+                    </div>
+                </div>
+
+                    <div class="cantidad">
+                        <div class="div1"><i class="fas fa-minus"></i></div>
+                        <div class="div2">1</div>
+                        <div class="div1"><i class="fas fa-plus"></i></div>
+                    </div>
+                
+                <div class="product-cost">
+                    <span>Subtotal: </span>
+                    <span>$500.00</span><br>
+                    <span>Costos de envío: </span>
+                    <span>$9.00</span><br>
+                    <span>Importe total: </span>
+                    <span>$509.00</span>
+                </div>  
+
+            </article>
+        </section>
+
+    </main>
+
+ 
+
+    <!--End of main body-->
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+
+            <div class="footer-main">
+                <div class="footer-title">
+                <span>REGÍSTRATE A NUESTRO CATÁLOGO</span>
+                </div>
+                <div class="footer-description">Obtén ofertas especiales, productos exclusivos e información de eventos en tu inbox.</div>
+            </div>
+
+            <div class="form-section">
+                <form action="" method="get">
+                    <div>
+                        <label for="emailAddress" id="label-email">Email</label>
+                        <input type="email" id="emailAddress">
+                    </div>
+
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="intereses">
+                            <span id="checkbox-text">
+                                Ver Políticas de Privacidad & Términos
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="footer-details">
+                        <p>Al suscribirse recibirá las últimas noticias y eventos asociados al mundo del ciclismo; según la Política de Privacidad & Términos.</p>
+                    </div>
+
+                    <div>
+                        <a href="#" id="subscribe">SUSCRÍBETE</a>
+                    </div>
+
+                    <div class="networks">
+                        <i class="fab fa-facebook-square fa-2x"></i>
+                        <i class="fab fa-twitter-square fa-2x"></i>
+                        <i class="fab fa-instagram-square fa-2x"></i>
+                        <i class="fab fa-youtube-square fa-2x"></i>
+                    </div>
+                    
+                </form>
+            </div>
+            
+        </div>
+    </footer>
+    <!-- End of Footer -->
+    
 </body>
 </html>

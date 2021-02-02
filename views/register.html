@@ -6,8 +6,11 @@
     <title>Register</title>
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://kit.fontawesome.com/89c6b6c230.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Varela+Round&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="body-form">
         <!-- Header -->
         <header>
             <div class="main-header">
@@ -34,6 +37,153 @@
             </div>
         </header>
         <!-- End of header -->
+
+        <!-- Form section -->
+        <main class="reg-form">
+            <div class="header-form">
+            <div class="first-line">
+                <a href="/"><i class="fas fa-chevron-left" id="back-sign"></i></a>
+                <div class="title-form">Crear una cuenta</div>
+            </div>
+            <p>Completa tus datos personales</p>
+            </div>
+
+            <form class="main-form" action="/" method="GET">
+                <div class="control-formulario">
+                    <label for="nombre">Nombre</label><br>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombres" class="control" minlength="2" pattern="[^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$
+                ]" required>
+                </div>
+
+                <div class="control-formulario">
+                <label for="apellidoPaterno">Apellido paterno</label><br>
+                <input type="text" id="apellidoPaterno" name="apellidoPaterno" placeholder="Apellido paterno" class="control" minlength="2" pattern="[^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$
+                ]" required>
+                </div>
+                
+                <div class="control-formulario">
+                <label for="apellidoMaterno">Apellido materno</label><br>
+                <input type="text" id="apellidoMaterno" name="apellidoMaterno" placeholder="Apellido materno" class="control" minlength="2" pattern="[^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$
+                ]" required>
+                </div>
+
+                <div class="control-formulario">
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="email" placeholder="ejemplo@nodebike.com.pe" required>
+                </div>
+
+                <div class="control-formulario">
+                    <label for="contraseña">Clave</label><br>
+                    <input type="password" name="password" id="contraseña" class="control" minlength="7" pattern="[^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$
+                    ]" title="La contraseña debe contener valores alfanuméricos, no se aceptan mayúsculas y se aceptan un mínimo de 7 caracteres" required>
+                </div>
+
+                <div class="control-formulario">
+                    <label for="contraseñax2">Confirmar clave</label><br>
+                    <input type="password" name="contraseñax2" id="contraseñax2" class="control" minlength="7" pattern="[^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$
+                    ]" title="La contraseña debe contener valores alfanuméricos, no se aceptan mayúsculas y se aceptan un mínimo de 7 caracteres" required>
+                </div>
+
+                <div class="control-formulario">
+                    <label>País de residencia</label><br>
+                    <select name="paises" class="control">
+                        <option value="peru" selected>Perú</option>
+                        <option value="canada">Canádá</option>
+                        <option value="colombia">Colombia</option>
+                        <option value="chile">Chile</option>
+                        <option value="ecuador">Ecuador</option>
+                    </select></div>
+
+                    <div class="control-formulario">
+                        <label>Tipo de documento</label><br>
+                        <select name="tipoDocumento" class="control">
+                            <option value="dni" selected>DNI</option>
+                            <option value="passport">Pasaporte</option>
+                            <option value="carnetExtranjero">Carnet de extranjería</option>
+                        </select></div>
+
+                        <div class="control-formulario">
+                            <label for="numeroDocumento">Número de documento</label><br>
+                            <input type="text" name="numeroDocumento" id="numeroDocumento" class="control" minlength="8"  placeholder="75296358" pattern="[^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$]" required>
+                        </div>
+
+                        <div class="control-formulario">
+                            <label for="genero">Género</label><br>
+                            <div class="line" id="line-1"><input type="radio" name="genero" value="femenino" checked>Femenino</div>
+                            <div class="line"><input type="radio" name="genero" value="masculino">Maculino</div>
+                        </div>
+
+                        <div class="control-formulario">
+                            <label for="fechaNacimiento">Fecha de Nacimiento</label><br>
+                            <input type="date" name="fechaNacimiento" id="fechaNacimiento" class="control"  required> 
+                        </div>
+
+                        <div class="control-formulario">
+                            <label for="celular">Número de documento</label><br>
+                            <input type="text" name="celular" id="celular" class="control" minlength="9"  placeholder="954562253" pattern="[^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$]" required>
+                        </div>
+
+                        <div class="control-formulario">
+                            <div class="line" id="line-1"><input type="checkbox" name="condicion" value="novedades" checked>Quiero recibir novedades</div>
+                            <div class="line"><input type="checkbox" name="condicion" value="terminos" checked>Acepto <a href=""><u>Términos y Condiciones</u></a></div>
+                        </div>
+
+                        <div class="primary-button"><button type="submit" class="boton-formulario">CREAR CUENTA</button></div>
+
+            </form>
+        </main>
+
+
+        <!--End of form section-->
+
+ <!-- Footer -->
+ <footer>
+    <div class="footer-container">
+
+        <div class="footer-main">
+            <div class="footer-title">
+            <span>REGÍSTRATE A NUESTRO CATÁLOGO</span>
+            </div>
+            <div class="footer-description">Obtén ofertas especiales, productos exclusivos e información de eventos en tu inbox.</div>
+        </div>
+
+        <div class="form-section">
+            <form action="" method="get">
+                <div>
+                    <label for="emailAddress" id="label-email">Email</label>
+                    <input type="email" id="emailAddress">
+                </div>
+
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="intereses">
+                        <span id="checkbox-text">
+                            Ver Políticas de Privacidad & Términos
+                        </span>
+                    </label>
+                </div>
+
+                <div class="footer-details">
+                    <p>Al suscribirse recibirá las últimas noticias y eventos asociados al mundo del ciclismo; según la Política de Privacidad & Términos.</p>
+                </div>
+
+                <div>
+                    <a href="#" id="subscribe">SUSCRÍBETE</a>
+                </div>
+
+                <div class="networks">
+                    <i class="fab fa-facebook-square fa-2x"></i>
+                    <i class="fab fa-twitter-square fa-2x"></i>
+                    <i class="fab fa-instagram-square fa-2x"></i>
+                    <i class="fab fa-youtube-square fa-2x"></i>
+                </div>
+                
+            </form>
+        </div>
+        
+    </div>
+</footer>
+<!-- End of Footer -->
     
 </body>
 </html>
