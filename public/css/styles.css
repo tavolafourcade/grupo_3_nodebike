@@ -431,6 +431,92 @@ form div input {
   width: 100%;
 }
 
+.top-products_detail span {
+  font-size: var(--h6);
+}
+
+.top-products_detail_price_stock span {
+  font-size: var(--subtitle-2);
+}
+
+.review {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.leave-opinion {
+  margin-left: 20px;
+}
+.leave-opinion span a {
+  align-items: center;
+}
+
+.leave-opinion span {
+  font-size: var(--caption);
+}
+
+.general-desc-product p {
+  text-align: justify;
+}
+
+.product-desc_image {
+  background-image: url(../images/detalleproducto-hero1.jpg);
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  margin: 20px 0px;
+}
+
+.second-description span {
+  font-size: var(--body2);
+}
+
+.red {
+  color: red;
+}
+
+.blue {
+  color: blue;
+}
+
+.orange {
+  color: orange;
+}
+
+.sec-filter {
+  width: 100%;
+  background-color: var(--primary);
+  border: 0px;
+  color: white;
+}
+
+.reason-to-love_subtitle {
+  font-size: var(--subtitle-1);
+}
+
+/*************************/
+/* WHAT MAKES IT SPECIAL */
+/*************************/
+.reason-to-love_subtitle {
+  font-size: var(--subtitle-1);
+  margin-bottom: 20px;
+}
+
+.video {
+  margin-bottom: 20px;
+}
+
+.video iframe {
+  width: 100%;
+}
+
+.reasons-to-love {
+  text-align: justify;
+}
+
 /**************************************************************/
 /***************** END PRODUCT DETAIL PAGE  *******************/
 /**************************************************************/
@@ -586,6 +672,20 @@ form div input {
 
   .footer-details {
     margin-bottom: 40px;
+  }
+
+  /**************************************************************/
+  /******************* PRODUCT DETAIL PAGE  *********************/
+  /**************************************************************/
+
+  .main-product_desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .dw {
+    width: 80%;
   }
 }
 
