@@ -275,11 +275,7 @@ form div input {
   /**********/
   /* REGISTER */
   /**********/
-  /*.register{
-    background-image: url('../images/home-hero1.jpg');
-    background-attachment: fixed;
-
-  }*/
+  
   .body-form{
     background-image: url('../images/background-form.jpg');
     /*background-attachment: fixed;*/
@@ -296,10 +292,11 @@ form div input {
 
   .header-form{
     padding: 21px 16px;
+    color: black;
   }
 
   #back-sign{
-    color: white;
+    color: black;
     width: 12px;
     height: 20px;
   }
@@ -311,6 +308,7 @@ form div input {
     letter-spacing: var(--h6-space);
     font-family: var(--font-family1);
     margin: auto;
+   
 
   }
 
