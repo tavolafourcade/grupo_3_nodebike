@@ -110,40 +110,6 @@ body {
   object-fit: cover;
 }
 
-/*******/
-/*NEWS */
-/*******/
-.news_title {
-  margin-bottom: 20px;
-}
-
-.news_title span {
-  font-size: var(--subtitle-1);
-  font-family: var(--font-family1);
-  font-weight: 700;
-}
-
-.news_see_more a {
-  display: flex;
-  text-decoration: none;
-  list-style: none;
-  color: white;
-  justify-content: center;
-  background-color: var(--secondary-light);
-  padding: 20px;
-  border-radius: 10px;
-  margin-top: 20px;
-}
-
-.news_image {
-  background-image: url(../images/novedades1.jpg);
-  width: 100%;
-  height: 200px;
-  background-size: cover;
-  background-position: center;
-  margin-top: 20px;
-}
-
 /**********/
 /* FOOTER */
 /**********/
@@ -240,6 +206,72 @@ form div input {
   margin: 20px 10px;
 }
 
+@media (min-width: 1024px) {
+  /**********/
+  /* HEADER */
+  /**********/
+  .main-header {
+    padding: 30px;
+  }
+  .menu {
+    display: none;
+  }
+
+  .navigation-menu {
+    display: flex;
+  }
+
+  .navigation-menu ul {
+    display: flex;
+  }
+
+  .navigation-menu li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .navigation-menu li a {
+    color: white;
+    font-size: 12px;
+  }
+
+  .page {
+    margin: 0 30px;
+  }
+
+  /*******************/
+  /* BIKE CATEGORIES */
+  /*******************/
+
+  .category-item .image img {
+    width: 400px;
+    height: 340;
+  }
+
+  /**********/
+  /* FOOTER */
+  /**********/
+
+  .footer-container {
+    padding: 60px 30% 30px;
+  }
+
+  .footer-title {
+    margin-bottom: 30px;
+  }
+
+  .footer-description {
+    margin-bottom: 20px;
+  }
+
+  .footer-details {
+    margin-bottom: 40px;
+  }
+}
+
 /**************************************************************/
 /****************** PRODUCT FILTERED PAGE  ********************/
 /**************************************************************/
@@ -309,105 +341,10 @@ form div input {
 /**************** END PRODUCT FILTERED PAGE  ******************/
 /**************************************************************/
 
-@media (min-width: 1024px) {
-  /**********/
-  /* HEADER */
-  /**********/
-  .main-header {
-    padding: 30px;
-  }
-  .menu {
-    display: none;
-  }
 
-  .navigation-menu {
-    display: flex;
-  }
 
-  .navigation-menu ul {
-    display: flex;
-  }
 
-  .navigation-menu li {
-    list-style: none;
-  }
 
-  a {
-    text-decoration: none;
-  }
-
-  .navigation-menu li a {
-    color: white;
-    font-size: 12px;
-  }
-
-  .page {
-    margin: 0 30px;
-  }
-
-  /*******************/
-  /* BIKE CATEGORIES */
-  /*******************/
-
-  .category-item .image img {
-    width: 400px;
-    height: 340;
-  }
-
-  /*******/
-  /*NEWS */
-  /*******/
-
-  .news-products {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .news_title {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .list-news {
-    display: flex;
-    flex-direction: wrap;
-    justify-content: space-between;
-  }
-
-  .new {
-    padding: 30px;
-    background-color: var(--background-color);
-    width: 260px;
-  }
-
-  .top-products_title a {
-    display: none;
-  }
-
-  .top-product_see_more a {
-    padding: 10px;
-  }
-
-  /**********/
-  /* FOOTER */
-  /**********/
-
-  .footer-container {
-    padding: 60px 30% 30px;
-  }
-
-  .footer-title {
-    margin-bottom: 30px;
-  }
-
-  .footer-description {
-    margin-bottom: 20px;
-  }
-
-  .footer-details {
-    margin-bottom: 40px;
-  }
-}
 
   /**********/
   /* REGISTER */
@@ -685,16 +622,15 @@ form div input {
   justify-content: space-around;
 }
 
-/**********/
-/* PRODUCTDETAIL */
-/**********/
+   /**********/
+  /* PRODUCTDETAIL */
+  /**********/
 
-table {
-  border: 1px solid black;
-  border-collapse: collapse;
+  table{
+    border: 1px solid black;
+    border-collapse: collapse;
 }
-td,
-th {
+  td, th{
   border: 1px solid black;
   padding: 5px;
 }
