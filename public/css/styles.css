@@ -5,6 +5,9 @@
   --secondary: #dd2c00;
   --secondary-light: #ff6434;
   --secondary-dark: #a30000;
+  --star-active: #ff9500;
+  --star-inactive: #d9d5d2;
+  --background-color: #e1e2e1;
   --font-family: "Varela", sans-serif;
   --font-family1: "Varela Round", sans-serif;
   --font-family2: "Merriweather", serif;
@@ -104,6 +107,74 @@ body {
   background-color: var(--secondary);
   padding: 10px;
   border-radius: 10px;
+}
+
+/************/
+/* PRODUCTO */
+/************/
+
+.hidden {
+  display: none;
+}
+.top-products_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.top-products_title span {
+  font-size: var(--subtitle-1);
+  font-family: var(--font-family1);
+  font-weight: 700;
+}
+
+.top-products_title a {
+  font-size: var(--caption);
+  font-family: var(--font-family2);
+  color: black;
+}
+
+.top-products_detail span {
+  font-family: var(--font-family1);
+}
+
+.top-products_detail_price_stock span {
+  font-family: var(--font-family2);
+  font-size: var(--body2);
+}
+
+.top-products_detail_price_stock span:last-child {
+  margin-left: 30px;
+}
+
+.top-products_detail-stars i {
+  color: var(--star-active);
+}
+
+.top-products_detail-stars i:last-child {
+  color: var(--star-inactive);
+}
+
+.top-product_see_more a {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  justify-content: center;
+  background-color: var(--secondary-light);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.top-product_image {
+  background-image: url(../images/detalleproducto-hero1.jpg);
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  margin-top: 20px;
 }
 
 /*******************/
@@ -222,7 +293,7 @@ form div input {
   display: flex;
   text-decoration: none;
   list-style: none;
-  color: var(--body2);
+  color: white;
   justify-content: center;
   background-color: var(--secondary-light);
   padding: 10px;
@@ -276,6 +347,60 @@ form div input {
     margin: 0 30px;
   }
 
+  /********/
+  /* HERO */
+  /********/
+
+  .hero {
+    background-image: url(../images/home-hero1.jpg);
+    width: 100%;
+    height: 670px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero-button {
+    top: 90%;
+    padding: 10px 60px;
+  }
+
+  /************/
+  /* PRODUCTO */
+  /************/
+
+  .hidden {
+    display: unset;
+  }
+
+  .desktop-products {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top-products_title {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .list-products {
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-between;
+  }
+
+  .product {
+    padding: 30px;
+    background-color: var(--background-color);
+    width: 240px;
+  }
+
+  .top-products_title a {
+    display: none;
+  }
+
+  .top-product_see_more a {
+    padding: 10px;
+  }
   /*******************/
   /* BIKE CATEGORIES */
   /*******************/
