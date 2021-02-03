@@ -345,6 +345,75 @@ form div input {
   margin: 20px 10px;
 }
 
+/**************************************************************/
+/****************** PRODUCT FILTERED PAGE  ********************/
+/**************************************************************/
+
+/****************/
+/* MIGA SECTION */
+/****************/
+
+.miga-container {
+  padding: 15px;
+}
+
+.miga-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.miga-content a {
+  color: black;
+  font-size: var(--caption);
+}
+
+.miga-content i {
+  margin: 0px 5px;
+}
+
+/******************/
+/* FILTER SECTION */
+/******************/
+
+.hidden-filter {
+  display: none;
+}
+
+.filter-container {
+  padding: 20px;
+}
+
+.filter-section {
+  background-color: var(--primary);
+}
+
+.filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.filter-options {
+  font-size: var(--body2);
+  color: white;
+}
+
+.toggle {
+  color: white;
+}
+
+/*******************/
+/* PRODUCT SECTION */
+/*******************/
+.mb {
+  margin-bottom: 50px;
+}
+
+/**************************************************************/
+/**************** END PRODUCT FILTERED PAGE  ******************/
+/**************************************************************/
+
 @media (min-width: 1024px) {
   /**********/
   /* HEADER */
