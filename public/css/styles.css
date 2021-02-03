@@ -757,16 +757,16 @@ form div input {
   justify-content: space-around;
 }
 
-   /**********/
-  /* PRODUCTDETAIL */
-  /**********/
+/**********/
+/* PRODUCTDETAIL */
+/**********/
 
-  table{
-    border: 1px solid black;
-    border-collapse: collapse;
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
 }
-  td, th{
+td,
+th {
   border: 1px solid black;
   padding: 5px;
 }
-
