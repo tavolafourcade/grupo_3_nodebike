@@ -215,6 +215,40 @@ body {
   object-fit: cover;
 }
 
+/*******/
+/*NEWS */
+/*******/
+.news_title {
+  margin-bottom: 20px;
+}
+
+.news_title span {
+  font-size: var(--subtitle-1);
+  font-family: var(--font-family1);
+  font-weight: 700;
+}
+
+.news_see_more a {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  justify-content: center;
+  background-color: var(--secondary-light);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.news_image {
+  background-image: url(../images/novedades1.jpg);
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  margin-top: 20px;
+}
+
 /**********/
 /* FOOTER */
 /**********/
@@ -408,6 +442,40 @@ form div input {
   .category-item .image img {
     width: 400px;
     height: 340;
+  }
+
+  /*******/
+  /*NEWS */
+  /*******/
+
+  .news-products {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .news_title {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .list-news {
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-between;
+  }
+
+  .new {
+    padding: 30px;
+    background-color: var(--background-color);
+    width: 260px;
+  }
+
+  .top-products_title a {
+    display: none;
+  }
+
+  .top-product_see_more a {
+    padding: 10px;
   }
 
   /**********/
