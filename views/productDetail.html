@@ -37,70 +37,113 @@
         </div>
     </header>
     <!-- End of header -->
+
+    <!-- Miga Section -->
+    <section class="miga-section">
+        <div class="miga-container miga-content">
+            <i class="fas fa-chevron-left fa-lg"></i>
+            <a href="./index.html">Home</a>
+            <i class="fas fa-chevron-right fa-xs"></i>
+            <a href="#">Categorías</a>
+            <i class="fas fa-chevron-right fa-xs"></i>
+            <a href="#">Montañeras</a>
+            <i class="fas fa-chevron-right fa-xs"></i>
+        </div>
+    </section>
+    <!-- End of Miga Section -->
+
+    
+
+
+    
 <!--Start of main body-->
     <main>
+        <!-- Filter Section -->
+        <section class="filter-section filter-container filter">
+            <select name="filtro" class="primary-filter"> <!--Objetivo es que te lleve a cada sección de la página-->
+                <option value="inf-general" selected>INFORMACIÓN GENERAL</option>
+                <option value="caracteristica">CARACTERÍSTICAS</option>
+                <option value="especif-tec">ESPECIFICACIONES TÉCNICAS</option>
+                <option value="tallaje">TALLAJE & AJUSTE</option>
+                <option value="opinion">OPINIONES</option>
+            </select>
+        </section>
+        <!-- End of Filter Section -->
 
-        <div class="bread-crumbs">
-            <span><a href="/"><i class="fas fa-chevron-left"></i></a></span>
-            <span>Home</span>
-            <span><i class="fas fa-angle-right"></i></span>
-            <span>Categorías</span>
-            <span><i class="fas fa-angle-right"></i></span>
-            <span>Montañeras</span>
-        </div>
+         <!-- Product Section -->
+        <section class="top-products">
+            <div class="container desktop-products">
+                <div class="list-products">
+                    <div class="product mb">
+                        <div>
+                            <div class="top-products_detail">
+                                <span>Artículo de Nombre x</span>
+                                <div class="top-products_detail_price_stock">
+                                    <span>$ 200.00</span>
+                                    <span>16 unid. en stock</span>
+                                </div>
+                                <div>
+                                    <div class="top-products_detail-stars">
+                                        <i class="fas fa-star fa-xs"></i>
+                                        <i class="fas fa-star fa-xs"></i>
+                                        <i class="fas fa-star fa-xs"></i>
+                                        <i class="fas fa-star fa-xs"></i>
+                                        <i class="fas fa-star fa-xs"></i>
+                                    </div>
+                                    <span><a href=""><u>07 opiniones</u></a></span>
+                                    <span>/</span>
+                                    <span><a href=""><u>Escribe tu opinión</u></a></span>
+                                </div>
+                                <div>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A enim ducimus natus velit aliquid, placeat, repellendus neque veniam expedita nemo illum quas blanditiis odit aspernatur doloribus mollitia incidunt vero. Repellendus!</p>
+                                </div>
+                                <div class="top-product_image">
+                                
+                                </div>
 
-        <select name="filtro" class="primary-filter"> <!--Objetivo es que te lleve a cada sección de la página-->
-            <option value="inf-general" selected>INFORMACIÓN GENERAL</option>
-            <option value="caracteristica">CARACTERÍSTICAS</option>
-            <option value="especif-tec">ESPECIFICACIONES TÉCNICAS</option>
-            <option value="tallaje">TALLAJE & AJUSTE</option>
-            <option value="opinion">OPINIONES</option>
-        </select>
+                                <div class="second-description">
+                                    <span>Color: </span>
+                                    <span><i class="fas fa-circle"></i></span>
+                                    <span><i class="fas fa-circle"></i></span>
+                                    <span><i class="fas fa-circle"></i></span><br>
+                                    <span>Talla: </span><br>
+                                    <select name="talla" class="sec-filter"> <!--Objetivo es que te lleve a cada sección de la página-->
+                                        <option value="inf-general" selected>Selecciones una talla</option>
+                                        <option value="S">S</option>
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                        <option value="XL">XL</option>
+                                    </select>
+                                    <div class="cantidad">
+                                        <div class="div1"><i class="fas fa-minus"></i></div>
+                                        <div class="div2">1</div>
+                                        <div class="div1"><i class="fas fa-plus"></i></div>
+                                    </div>
+                                    <div class="button"><button type="submit" class="boton-cart">AGREGAR AL CARRITO</button></div>
+                    
+                                </div>
+                                
+                            </div>
+                
+                            <div class="top-product_see_more">
+                                <a href="#">VER MÁS DETALLE</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+        
 
-        <section class="inf-general-1">
-            <div class="main-description">
-                <div class="article-name">Artículo de nombre x</div>
-                <span>$200</span>
-                <span>16 unid. en stock</span><br>
-                <div class="calification">
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="fas fa-star"></i></span>
-                    <span><i class="far fa-star"></i></span>
+
                 </div>
-                <span><a href=""><u>07 opiniones</u></a></span>
-                <span>/</span>
-                <span><a href=""><u>Escribe tu opinión</u></a></span>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A enim ducimus natus velit aliquid, placeat, repellendus neque veniam expedita nemo illum quas blanditiis odit aspernatur doloribus mollitia incidunt vero. Repellendus!</p>
-
-                <div class="description-image">
-                    <img src="./images/detalleproducto-hero1.jpg" alt="product image">
-                </div>
+                
+                
             </div>
-            <div class="second-description">
-                <span>Color: </span>
-                <span><i class="fas fa-circle"></i></span>
-                <span><i class="fas fa-circle"></i></span>
-                <span><i class="fas fa-circle"></i></span><br>
-                <span>Talla: </span><br>
-                <select name="talla" class="sec-filter"> <!--Objetivo es que te lleve a cada sección de la página-->
-                    <option value="inf-general" selected>Selecciones una talla</option>
-                    <option value="S">S</option>
-                    <option value="M">M</option>
-                    <option value="L">L</option>
-                    <option value="XL">XL</option>
-                </select>
-                <div class="cantidad">
-                    <div class="div1"><i class="fas fa-minus"></i></div>
-                    <div class="div2">1</div>
-                    <div class="div1"><i class="fas fa-plus"></i></div>
-                </div>
-                <div class="button"><button type="submit" class="boton-cart">AGREGAR AL CARRITO</button></div>
-
-            </div>
+            
         </section>
 
+        <!-- End of Product Section -->
+
+        <!-- What makes it special Section -->
         <section class="inf-general-2">
             <div>¿Por qué la amaras?</div>
             <video src="https://www.youtube.com/watch?v=p2xBsiNca7c" width=320  height=240 controls poster="video.jpg">
@@ -122,6 +165,10 @@
                 </div>
             </div>
         </section>
+        <!-- What makes it special Section -->
+
+
+        <!-- Characteristics Section -->
 
         <section class="caracteristica">
             <div>Características</div>
@@ -145,6 +192,10 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel excepturi repellendus voluptatum soluta culpa, temporibus inventore corporis fuga. Distinctio, porro quidem amet illum ab sit quisquam architecto est ex laudantium.</p>
             <div class="button"><button type="submit" class="boton-cart-sec">VER MÁS DETALLE</button></div>  
         </section>
+
+        <!-- End of Characteristics Section -->
+
+        <!-- EN ADELANTE PARTE DE LORENA -->
 
         <section class="especif-tec">
             <div>Especificación Técnica</div>
