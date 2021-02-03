@@ -1,0 +1,862 @@
+:root {
+  --primary: #263238;
+  --primary-light: #4f5b62;
+  --primary-dark: #000a12;
+  --secondary: #dd2c00;
+  --secondary-light: #ff6434;
+  --secondary-dark: #a30000;
+  --star-active: #ff9500;
+  --star-inactive: #d9d5d2;
+  --background-color: #e1e2e1;
+  --font-family: "Varela", sans-serif;
+  --font-family1: "Varela Round", sans-serif;
+  --font-family2: "Merriweather", serif;
+  --h6: 21px;
+  --h6-space: 0.15px;
+  --h5: 25px;
+  --h4: 35px;
+  --h4-space: 0.25px;
+  --h3: 50px;
+  --subtitle-1: 17px;
+  --sub-1-space: 0.15px;
+  --subtitle-2: 15px;
+  --sub-2-space: 0.1px;
+  --body1: 15px;
+  --body1-space: 0.5px;
+  --body2: 13px;
+  --body2-space: 0.25px;
+  --button: 13px;
+  --button-space: 1.25px;
+  --caption: 11px;
+  --caption-space: 0.4px;
+  --overline: 10ox;
+  --overline-space: 1.5px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  box-sizing: border-box;
+}
+
+/**********/
+/* HEADER */
+/**********/
+
+.main-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: var(--primary-dark);
+  font-family: var(--font-family);
+  font-size: var(--h5);
+  line-height: var(--h5);
+}
+
+.navigation-menu {
+  display: none;
+}
+
+.burger {
+  color: white;
+}
+
+.brand-name {
+  color: white;
+
+  font-size: var(--h5);
+}
+
+.fa-shopping-cart {
+  color: white;
+}
+
+#active {
+  color: var(--secondary-light);
+}
+
+/********/
+/* HERO */
+/********/
+
+.hero {
+  background-image: url(../images/home-hero1.jpg);
+  width: 100vw;
+  height: 30vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-container {
+  display: flex;
+}
+
+.hero-container a {
+  text-decoration: none;
+  color: white;
+  line-height: var(--button);
+  font-size: var(--button);
+}
+
+.hero-button {
+  position: absolute;
+  top: 250px;
+  background-color: var(--secondary);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/************/
+/* PRODUCTO */
+/************/
+
+.hidden {
+  display: none;
+}
+.top-products_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.top-products_title span {
+  font-size: var(--subtitle-1);
+  font-family: var(--font-family1);
+  font-weight: 700;
+}
+
+.top-products_title a {
+  font-size: var(--caption);
+  font-family: var(--font-family2);
+  color: black;
+}
+
+.top-products_detail span {
+  font-family: var(--font-family1);
+}
+
+.top-products_detail_price_stock span {
+  font-family: var(--font-family2);
+  font-size: var(--body2);
+}
+
+.top-products_detail_price_stock span:last-child {
+  margin-left: 30px;
+}
+
+.top-products_detail-stars i {
+  color: var(--star-active);
+}
+
+.top-products_detail-stars i:last-child {
+  color: var(--star-inactive);
+}
+
+.top-product_see_more a {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  justify-content: center;
+  background-color: var(--secondary-light);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.top-product_image {
+  background-image: url(../images/detalleproducto-hero1.jpg);
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  margin-top: 20px;
+}
+
+/*******************/
+/* BIKE CATEGORIES */
+/*******************/
+.categories {
+  background-color: var(--primary);
+}
+
+.container {
+  padding: 30px;
+}
+
+.categories-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.category-item {
+  margin: 30px;
+}
+
+.category-item .category-title {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  color: white;
+  background-color: var(--secondary-dark);
+  font-family: var(--font-family);
+  font-size: var(--h6);
+  border-radius: 5px 5px 0px 0px;
+}
+
+.category-item .image img {
+  width: 320px;
+  height: 280px;
+  object-fit: cover;
+}
+
+/*******/
+/*NEWS */
+/*******/
+.news_title {
+  margin-bottom: 20px;
+}
+
+.news_title span {
+  font-size: var(--subtitle-1);
+  font-family: var(--font-family1);
+  font-weight: 700;
+}
+
+.news_see_more a {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  justify-content: center;
+  background-color: var(--secondary-light);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.news_image {
+  background-image: url(../images/novedades1.jpg);
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  margin-top: 20px;
+}
+
+/**********/
+/* FOOTER */
+/**********/
+
+footer {
+  background-color: var(--primary-dark);
+  color: white;
+}
+.footer-container {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-title {
+  display: flex;
+  justify-content: center;
+  font-family: var(--font-family);
+  font-size: var(--h6);
+  margin-bottom: 10px;
+}
+
+.footer-title span {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-description {
+  margin-bottom: 10px;
+  font-family: var(--font-family);
+  font-size: var(--body1);
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-family);
+}
+
+form div input {
+  border: 0px;
+}
+#label-email {
+  margin-bottom: 5px;
+  font-size: var(--subtitle-1);
+}
+
+#emailAddress {
+  line-height: var(--h4);
+
+  border-radius: 10px;
+}
+
+.checkbox {
+  margin: 5px 0;
+}
+.checkbox label input {
+  margin-right: 20px;
+}
+
+#checkbox-text {
+  font-size: 11px;
+}
+
+#checkbox-input {
+  font-size: 3px;
+}
+
+.footer-details {
+  font-size: var(--body2);
+  margin-bottom: 20px;
+}
+
+#subscribe {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  justify-content: center;
+  background-color: var(--secondary-light);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.networks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.networks i {
+  color: var(--primary-light);
+  margin: 20px 10px;
+}
+
+/**************************************************************/
+/****************** PRODUCT FILTERED PAGE  ********************/
+/**************************************************************/
+
+/****************/
+/* MIGA SECTION */
+/****************/
+
+.miga-container {
+  padding: 15px;
+}
+
+.miga-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.miga-content a {
+  color: black;
+  font-size: var(--caption);
+}
+
+.miga-content i {
+  margin: 0px 5px;
+}
+
+/******************/
+/* FILTER SECTION */
+/******************/
+
+.hidden-filter {
+  display: none;
+}
+
+.filter-section {
+  border: 0px;
+}
+
+.primary-filter {
+  background-color: var(--primary);
+  border: 0px;
+  color: white;
+}
+
+.filter-container {
+  padding: 20px;
+}
+
+.filter-section {
+  background-color: var(--primary);
+}
+
+.filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.filter-options {
+  font-size: var(--body2);
+  color: white;
+}
+
+.toggle {
+  color: white;
+}
+
+/*******************/
+/* PRODUCT SECTION */
+/*******************/
+.mb {
+  margin-bottom: 50px;
+}
+
+/**************************************************************/
+/**************** END PRODUCT FILTERED PAGE  ******************/
+/**************************************************************/
+
+/**************************************************************/
+/******************* PRODUCT DETAIL PAGE  *********************/
+/**************************************************************/
+.primary-filter {
+  width: 100%;
+}
+
+/**************************************************************/
+/***************** END PRODUCT DETAIL PAGE  *******************/
+/**************************************************************/
+
+@media (min-width: 1024px) {
+  /**********/
+  /* HEADER */
+  /**********/
+  .main-header {
+    padding: 30px;
+  }
+  .menu {
+    display: none;
+  }
+
+  .navigation-menu {
+    display: flex;
+  }
+
+  .navigation-menu ul {
+    display: flex;
+  }
+
+  .navigation-menu li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .navigation-menu li a {
+    color: white;
+    font-size: 12px;
+  }
+
+  .page {
+    margin: 0 30px;
+  }
+
+  /********/
+  /* HERO */
+  /********/
+
+  .hero {
+    background-image: url(../images/home-hero1.jpg);
+    width: 100%;
+    height: 670px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero-button {
+    top: 90%;
+    padding: 10px 60px;
+  }
+
+  /************/
+  /* PRODUCTO */
+  /************/
+
+  .hidden {
+    display: unset;
+  }
+
+  .desktop-products {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top-products_title {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .list-products {
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-between;
+  }
+
+  .product {
+    padding: 30px;
+    background-color: var(--background-color);
+    width: 240px;
+  }
+
+  .top-products_title a {
+    display: none;
+  }
+
+  .top-product_see_more a {
+    padding: 10px;
+  }
+  /*******************/
+  /* BIKE CATEGORIES */
+  /*******************/
+
+  .category-item .image img {
+    width: 400px;
+    height: 340;
+  }
+
+  /*******/
+  /*NEWS */
+  /*******/
+
+  .news-products {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .news_title {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .list-news {
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-between;
+  }
+
+  .new {
+    padding: 30px;
+    background-color: var(--background-color);
+    width: 260px;
+  }
+
+  .top-products_title a {
+    display: none;
+  }
+
+  .top-product_see_more a {
+    padding: 10px;
+  }
+
+  /**********/
+  /* FOOTER */
+  /**********/
+
+  .footer-container {
+    padding: 60px 30% 30px;
+  }
+
+  .footer-title {
+    margin-bottom: 30px;
+  }
+
+  .footer-description {
+    margin-bottom: 20px;
+  }
+
+  .footer-details {
+    margin-bottom: 40px;
+  }
+}
+
+/**********/
+/* REGISTER */
+/**********/
+/*.register{
+    background-image: url('../images/home-hero1.jpg');
+    background-attachment: fixed;
+
+  }*/
+.body-form {
+  background-image: url("../images/background-form.jpg");
+  /*background-attachment: fixed;*/
+  background-size: cover;
+}
+
+.reg-form {
+  /*background-color: green; /*Se debe poner una imagen, pero no lo lee */
+  color: white;
+  font-family: var(--font-family2);
+}
+
+.header-form {
+  padding: 21px 16px;
+}
+
+#back-sign {
+  color: white;
+  width: 12px;
+  height: 20px;
+}
+
+.title-form {
+  justify-content: center;
+  font-size: var(--h6);
+  letter-spacing: var(--h6-space);
+  font-family: var(--font-family1);
+  margin: auto;
+}
+
+.first-line {
+  display: flex;
+  margin-bottom: 18px;
+}
+
+.main-form {
+  background-color: var(--primary);
+  width: 100%;
+  /*margin-top: 60px;*/
+  padding-bottom: 24px;
+}
+
+.control-formulario {
+  width: 90%;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 18px;
+  margin: auto;
+  font-family: var(--font-family2);
+  font-size: var(--body1);
+  letter-spacing: var(--body1-space);
+}
+.line > a {
+  color: white;
+  font-size: var(--body2);
+  letter-spacing: var(--body2-space);
+}
+.control-formulario > input,
+.control {
+  height: 33px;
+  border-radius: 10px;
+  margin-top: none;
+}
+
+.control-formulario > label {
+  font-size: var(--body1);
+  letter-spacing: 0.5px;
+}
+
+.line {
+  display: inline;
+  font-size: var(--body2);
+  letter-spacing: var(--body2-space);
+}
+
+#line-1 {
+  margin-bottom: 16px;
+}
+
+.primary-button {
+  width: 90%;
+  justify-content: center;
+  margin: auto;
+  margin-top: 24px;
+}
+
+.boton-formulario {
+  background-color: var(--secondary);
+  color: white;
+  border-radius: 8px;
+  height: 55px;
+  font-size: var(--body2);
+  letter-spacing: var(--body2-space);
+}
+
+@media (min-width: 414px) {
+  .main-form {
+    width: 414px;
+    margin: auto;
+    margin-bottom: 90px;
+  }
+}
+
+/**********/
+/* PRODUCTCART */
+/**********/
+.body-productCart {
+  font-family: var(--font-family2);
+}
+
+.header-productCart {
+  margin: 22px 16px 5px;
+}
+
+.bread-crumbs {
+  color: black;
+  font-size: var(--caption);
+  letter-spacing: var(--caption-space);
+}
+
+.boton-formulario-secondary {
+  background-color: var(--secondary-light);
+  color: white;
+  border-radius: 8px;
+  height: 55px;
+  font-size: var(--body2);
+  letter-spacing: var(--body2-space);
+  width: 100%;
+  margin-top: 19px;
+}
+
+.boton-formulario-primary {
+  background-color: var(--secondary);
+  color: white;
+  border-radius: 8px;
+  height: 55px;
+  font-size: var(--body2);
+  letter-spacing: var(--body2-space);
+  width: 100%;
+  margin-top: 22px;
+}
+
+.article {
+  /*border: solid 1px green;*/
+  width: 414px;
+  box-sizing: border-box;
+  padding: 16px;
+  background-color: #e1e2e1;
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.article-title {
+  padding: 10px 0;
+  color: white;
+  background-color: var(--secondary-dark);
+  font-family: var(--font-family);
+  font-size: var(--h6);
+  border-radius: 5px 5px 0px 0px;
+  text-align: center;
+}
+
+.article-image {
+  width: 382px;
+  height: 214px;
+  position: relative;
+}
+
+#checkbox {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  height: 30px;
+  width: 30px;
+}
+
+.article-image > img {
+  width: 100%;
+  height: 100%;
+}
+
+.cantidad {
+  display: flex;
+  /*flex-grow: 0.20 0.60 0.20;*/
+  justify-content: space-between;
+  margin-bottom: 13px;
+  margin-top: 15px;
+}
+.div1 {
+  display: flex;
+  flex-grow: 0.18;
+  /*text-align: center;*/
+  /*padding-top:7px;*/
+  align-items: center;
+  justify-content: center;
+}
+
+.div2 {
+  flex-grow: 0.6;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cantidad > div {
+  background-color: white;
+  border-radius: 10px;
+  border: solid 1px black;
+  height: 32px;
+}
+
+.product-cost {
+  border-top: solid black 1px;
+  padding-top: 13px;
+}
+
+.product-description {
+  padding-top: 14px;
+  position: relative;
+}
+
+.secondary-action {
+  position: absolute;
+  right: 1px;
+  top: 28px;
+  height: 100px;
+}
+
+.secondary-action > div > i {
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
+  color: var(--secondary);
+  margin-bottom: 10px;
+}
+
+.article-name {
+  padding-bottom: 18px;
+  font-family: var(--font-family1);
+  font-size: var(--h6);
+  letter-spacing: var(--h6-space);
+}
+
+.articlesToBuy {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/**********/
+/* PRODUCTDETAIL */
+/**********/
+
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+td,
+th {
+  border: 1px solid black;
+  padding: 5px;
+}

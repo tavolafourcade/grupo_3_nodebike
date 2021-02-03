@@ -11,7 +11,7 @@ app.listen(3060, () => {
     console.log("El servidor 3060 está corriendo");
 });
 
-app.get("/home", (req, res) => {
+app.get("/", (req, res) => {
     let htmlPathHome= path.resolve(__dirname, "./views/index.html");
     res.sendFile(htmlPathHome);
 });
