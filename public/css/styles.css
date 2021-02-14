@@ -441,6 +441,7 @@ td,th {
 /* BOTTOM ----*/
 .especif-tec{
   padding: 11px 16px;
+  /*width: 100%;*/
 
 }
 
@@ -478,8 +479,8 @@ td,th {
 .body-table{
   width: 477px;
   height: 275px;
-  /*overflow-y: hidden; 
-  overflow-x: scroll;*/
+  overflow-y: hidden; 
+  overflow-x: scroll;
 }
 
 .table-head{
@@ -502,6 +503,9 @@ td,th {
 
 }
 
+
+/*------------------------------
+--------------------COMMENTS SECTION-----------------------*/
 .opinion{
   background-color: #E1E2E1;
   width: 100%;
