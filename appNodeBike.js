@@ -8,7 +8,7 @@ const usersRout = require("./routers/users.js");
 
 
 const app = express();
-const publicFolderPath = path.resolve(__dirname, "./public");
+const publicFolderPath = path.join(__dirname, "./public");/*cambié resolve por join */
 
 app.listen(3060, () => {
     console.log("El servidor 3060 está corriendo");
@@ -20,6 +20,7 @@ app.use(productsRout); /*Desarrollando*/
 app.use(usersRout); /*Desarrollando*/
 
 app.set("view engine", "ejs");
+app.set('views', path.resolve(__dirname, 'views/'));
 
 /*
 app.get("/", (req, res) => {
