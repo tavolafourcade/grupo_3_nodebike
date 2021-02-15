@@ -1,16 +1,27 @@
-let express = require("express");
-
+const express = require("express");
 const path = require("path");
 
-const app = express();
+/*Llamando rutas*/
+const mainRout = require("./routers/main.js");
+const productsRout = require("./routers/products.js");
+const usersRout = require("./routers/users.js");
 
+
+const app = express();
 const publicFolderPath = path.resolve(__dirname, "./public");
-app.use(express.static(publicFolderPath));
 
 app.listen(3060, () => {
     console.log("El servidor 3060 está corriendo");
 });
 
+app.use(express.static(publicFolderPath)); 
+app.use(mainRout); /*Vista  home y productCart */
+app.use(productsRout); /*Desarrollando*/
+app.use(usersRout); /*Desarrollando*/
+
+app.set("view engine", "ejs");
+
+/*
 app.get("/", (req, res) => {
     let htmlPathHome= path.resolve(__dirname, "./views/index.html");
     res.sendFile(htmlPathHome);
@@ -40,3 +51,5 @@ app.get("/login", (req, res) => {
     let htmlPathLogin= path.resolve(__dirname, "./views/login.html");
     res.sendFile(htmlPathLogin);
 })
+
+*/
