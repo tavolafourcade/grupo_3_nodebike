@@ -1,0 +1,44 @@
+ 
+ <!DOCTYPE html>
+ <html lang="en">
+ <%- include('./partials/head') %>
+<body class="body-form">
+
+    <%- include('./partials/header') %>
+
+     <!-- Form section -->
+     <main class="reg-form">
+        <div class="header-form">
+            <div class="first-line">
+                <a href="/"><i class="fas fa-chevron-left" id="back-sign"></i></a>
+                <div class="title-form">Iniciar sesión</div>
+            </div>
+            <span>No tienes una cuenta?</span><span><a href="/register"><u>Regístrate</u></a></span>
+            </div>
+
+
+     <form class="main-form" action="/" method="GET">
+     <div class="control-formulario">
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" placeholder="ejemplo@nodebike.com.pe" required>
+    </div>
+
+    <div class="control-formulario">
+        <label for="contraseña">Clave</label><br>
+        <input type="password" name="password" id="contraseña" class="control" minlength="7" pattern="[^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$
+        ]" title="La contraseña debe contener valores alfanuméricos, no se aceptan mayúsculas y se aceptan un mínimo de 7 caracteres" required>
+    </div>
+
+    <div class="control-formulario">
+        <div class="line"><input type="checkbox" name="guardarContrasenha" value="guardarContrasenha" checked>Recordar usuario y contraseña</div>
+    </div>
+
+    <div class="primary-button"><button type="submit" class="boton-formulario">INICIAR SESIÓN</button></div>
+</form>
+</main>
+     <!--End form section-->
+
+     <!-- Footer -->
+     <%- include('./partials/footer') %>
+</body>
+     </html>
