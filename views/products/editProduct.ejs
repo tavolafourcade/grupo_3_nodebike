@@ -1,12 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <%- include('./partials/head') %>
 <body>
-    Estas en edit products
+    <%- include('./partials/header') %> <!--Entiendo que debería haber un link que jale a la edición o busqueda de un producto-->
+    <main>
+        
+                    <form action="/products/edit" method="POST">
+                        <p>
+                            <label for="name">Nombre del producto:</label>
+                            <input id="name" name="name" type="text" value="<%= product?.name %>"><!--Debo de colocar un objeto literal-->
+                        </p>
+                        <p>
+                            <label for="description">Descripción:</label>
+                            <input id="description" name="description" type="text" value="<%=product?.description %>">
+                        </p>
+                        <p>
+                            <label for="image">Imagen:</label>
+                            <input id="image" name="image" type="text" value="<%=product?.image %>">
+                        </p>
+                        <p>
+                            <label for="category">Categoría:</label>
+                            <input id="category" name="category" type="text" value="<%= product?.category %>">
+                        </p>
+                        <p>
+                            <label for="price">Precio:</label>
+                            <input id="price" name="price" type="number" value="<%= product?.price %>">
+                        </p>
+                        <button type="reset">Limpiar</button>
+                        <button type="submit">Guardar</button>
+
+                    </form>
+                
+       
+    </main>
+
+
+    <%- include('./partials/footer') %>
 </body>
 </html>
