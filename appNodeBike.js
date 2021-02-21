@@ -1,5 +1,6 @@
 const express = require("express");
 const path = require("path");
+const methodOverride= require("method-override");
 
 /*Llamando rutas*/
 const mainRout = require("./routers/main.js");
@@ -17,11 +18,12 @@ app.listen(3060, () => {
 app.use(express.static(publicFolderPath)); 
 app.use(mainRout); /*Vista  home y productCart */
 app.use(productsRout); /*Desarrollando*/
-app.use(usersRout); /*Desarrollando*/
+app.use("/users", usersRout); /*Desarrollando*/
 
 app.set("view engine", "ejs");
 app.set('views', path.resolve(__dirname, 'views/'));
 
+app.use(methodOverride("_method"));
 /*
 app.get("/", (req, res) => {
     let htmlPathHome= path.resolve(__dirname, "./views/index.html");

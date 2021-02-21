@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('./partials/head') %>
+    <%- include('../partials/head') %>
 <body>
-    <%- include('./partials/header') %> <!--Entiendo que debería haber un link que jale a la edición o busqueda de un producto-->
+    <%- include('../partials/header') %> <!--Entiendo que debería haber un link que jale a la edición o busqueda de un producto-->
     <main>
         
-                    <form action="/products/edit" method="POST">
+                   <form action="/products/edit" method="POST">
                         <p>
                             <label for="name">Nombre del producto:</label>
-                            <input id="name" name="name" type="text" value="<%= product?.name %>"><!--Debo de colocar un objeto literal-->
+                            <input id="name" name="name" type="text" value="<%=product?.name %>"> <!--Debo de colocar un objeto literal-->
                         </p>
                         <p>
                             <label for="description">Descripción:</label>
@@ -35,6 +35,6 @@
     </main>
 
 
-    <%- include('./partials/footer') %>
+    <%- include('../partials/footer') %>
 </body>
 </html>
