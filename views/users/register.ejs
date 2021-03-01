@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('./partials/head') %>
+    <%- include('../partials/head') %>
 <body class="body-form">
         <!-- Header -->
-        <%- include('./partials/header') %>
+        <%- include('../partials/header') %>
         <!-- End of header -->
 
         <!-- Form section -->
         <main class="reg-form">
+            <% if(locals.errors) { %>
+                <% for( let oneError in errors ) { %>
+                    <p><%= errors[oneError].msg %></p>
+                <% } %>
+            <%} %>
+            
             <div class="header-form">
             <div class="first-line">
                 <a href="/"><i class="fas fa-chevron-left" id="back-sign"></i></a>
@@ -16,17 +22,22 @@
             <div>Completa tus datos personales</div>
             </div>
 
-            <form class="main-form" action="/" method="GET">
+            <form class="main-form" action="/users/register" method="POST" enctype="multipart/form-data"> <!--revisar si el action es correcto-->
                 <div class="control-formulario">
                     <label for="nombre">Nombre</label><br>
-                <input type="text" id="nombre" name="nombre" placeholder="Nombres" class="control" minlength="2" pattern="[^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$
-                ]" required>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombres" class="control" minlength="2" pattern="[^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$
+                    ]" required>
+                    <% if(locals.errors && errors.nombre) { %>
+                        <div clss="text-danger"> 
+                            Aquí va a ir el error
+                        </div>
+                    <% } %>
                 </div>
 
                 <div class="control-formulario">
-                <label for="apellidoPaterno">Apellido paterno</label><br>
-                <input type="text" id="apellidoPaterno" name="apellidoPaterno" placeholder="Apellido paterno" class="control" minlength="2" pattern="[^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$
-                ]" required>
+                    <label for="apellidoPaterno">Apellido paterno</label><br>
+                    <input type="text" id="apellidoPaterno" name="apellidoPaterno" placeholder="Apellido paterno" class="control" minlength="2" pattern="[^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$
+                    ]" required>
                 </div>
                 
                 <div class="control-formulario">
@@ -34,7 +45,10 @@
                 <input type="text" id="apellidoMaterno" name="apellidoMaterno" placeholder="Apellido materno" class="control" minlength="2" pattern="[^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$
                 ]" required>
                 </div>
-
+<!--AGRENDAO LÍNEA PARA PODER CARGAR ARCHIVOS-->
+                <label><b>Imagen de perfil:</b></label>
+                <input type="file" name="imagenUsuario" id="imagenUsuario" class="control-formulario">
+<!--------------------------------------------------------------------------------------------S-->
                 <div class="control-formulario">
                     <label for="email">Email</label><br>
                     <input type="email" id="email" name="email" placeholder="ejemplo@nodebike.com.pe" required>
@@ -47,27 +61,38 @@
                 </div>
 
                 <div class="control-formulario">
-                    <label for="contraseñax2">Confirmar clave</label><br>
-                    <input type="password" name="contraseñax2" id="contraseñax2" class="control" minlength="7" pattern="[^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$
+                    <label for="passwordx2">Confirmar clave</label><br>
+                    <input type="password" name="passwordx2" id="passwordx2" class="control" minlength="7" pattern="[^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$
                     ]" title="La contraseña debe contener valores alfanuméricos, no se aceptan mayúsculas y se aceptan un mínimo de 7 caracteres" required>
                 </div>
 
                 <div class="control-formulario">
                     <label>País de residencia</label><br>
                     <select name="paises" class="control">
-                        <option value="peru" selected>Perú</option>
+                        <option value="">Elige un país</option>
+                        <%
+                            let paises = ['Peru', 'Canada', 'Colombia', 'Chile', 'Ecuador'];
+                         %>
+                         <% for (const unPais of paises) { %>
+                            <option value="<%= unPais %>"> <%= unPais %> </option>
+                         <% } %>
+                        <!--<option value="peru" selected>Perú</option>
                         <option value="canada">Canádá</option>
                         <option value="colombia">Colombia</option>
                         <option value="chile">Chile</option>
-                        <option value="ecuador">Ecuador</option>
+                        <option value="ecuador">Ecuador</option>-->
                     </select></div>
 
                     <div class="control-formulario">
                         <label>Tipo de documento</label><br>
                         <select name="tipoDocumento" class="control">
-                            <option value="dni" selected>DNI</option>
-                            <option value="passport">Pasaporte</option>
-                            <option value="carnetExtranjero">Carnet de extranjería</option>
+                            <option value="">Elige tipo de documento de identificación</option>
+                            <%
+                                let documentos = ['DNI', 'Pasaporte', 'Carnet de extranjería'];
+                            %>
+                            <% for (const unDocumento of documentos) { %>
+                                <option value="<%= unDocumento %>"> <%= unDocumento %> </option>
+                            <% } %>
                         </select></div>
 
                         <div class="control-formulario">
@@ -83,7 +108,7 @@
 
                         <div class="control-formulario">
                             <label for="fechaNacimiento">Fecha de Nacimiento</label><br>
-                            <input type="date" name="fechaNacimiento" id="fechaNacimiento" class="control"  required> 
+                            <input type="date" name="fechaNacimiento" id="fechaNacimiento" class="control"> 
                         </div>
 
                         <div class="control-formulario">
@@ -105,7 +130,7 @@
         <!--End of form section-->
 
  <!-- Footer -->
- <%- include('./partials/footer') %>
+ <%- include('../partials/footer') %>
 <!-- End of Footer -->
     
 </body>

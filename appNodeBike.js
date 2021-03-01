@@ -6,53 +6,36 @@ const methodOverride= require("method-override");
 const mainRout = require("./routers/main.js");
 const productsRout = require("./routers/products.js");
 const usersRout = require("./routers/users.js");
+const logMiddleware = require("./middlewares/logMiddleware");
 
 
 const app = express();
 const publicFolderPath = path.join(__dirname, "./public");/*cambié resolve por join */
+//const direction=path.dirname(publicFolderPath);
+//console.log(direction);
 
 app.listen(3060, () => {
     console.log("El servidor 3060 está corriendo");
 });
+
+app.set("view engine", "ejs");
+app.set('views', path.resolve(__dirname, 'views/'));
+
+app.post(logMiddleware);
+
+////app.use(logger("dev"));
+app.use(express.urlencoded({extended:false}));
+app.use(express.json());
+////app.use(cookieParser());
+app.use(express.static(path.join(__dirname, "./public")));
+app.use(methodOverride("_method"));
 
 app.use(express.static(publicFolderPath)); 
 app.use(mainRout); /*Vista  home y productCart */
 app.use(productsRout); /*Desarrollando*/
 app.use("/users", usersRout); /*Desarrollando*/
 
-app.set("view engine", "ejs");
-app.set('views', path.resolve(__dirname, 'views/'));
 
-app.use(methodOverride("_method"));
-/*
-app.get("/", (req, res) => {
-    let htmlPathHome= path.resolve(__dirname, "./views/index.html");
-    res.sendFile(htmlPathHome);
+app.use((req,res,next)=>{
+    res.status(404).render("error");
 });
-
-app.get("/product", (req, res) => {
-    let htmlPathProduct= path.resolve(__dirname, "./views/product.html");
-    res.sendFile(htmlPathProduct);
-});
-
-app.get("/productDetail", (req, res) => {
-    let htmlPathProductDetail= path.resolve(__dirname, "./views/productDetail.html");
-    res.sendFile(htmlPathProductDetail);
-});
-
-app.get("/productCart", (req, res) => {
-    let htmlPathProductCart= path.resolve(__dirname, "./views/productCart.html");
-    res.sendFile(htmlPathProductCart);
-});
-
-app.get("/register", (req, res) => {
-    let htmlPathRegister= path.resolve(__dirname, "./views/register.html");
-    res.sendFile(htmlPathRegister);
-});
-
-app.get("/login", (req, res) => {
-    let htmlPathLogin= path.resolve(__dirname, "./views/login.html");
-    res.sendFile(htmlPathLogin);
-})
-
-*/
