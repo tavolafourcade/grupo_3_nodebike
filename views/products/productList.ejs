@@ -39,114 +39,34 @@
             
 
             <div class="list-products">
-                <div class="product mb">
-        
-                    <div>
-                        <div class="top-products_detail">
-                            <span>Artículo de Nombre x</span>
-                            <div class="top-products_detail_price_stock">
-                                <span>$ 200.00</span>
-                                <span>16 unid. en stock</span>
-                            </div>
-                            <div class="top-products_detail-stars">
-                                <i class="fas fa-star fa-xs"></i>
-                                <i class="fas fa-star fa-xs"></i>
-                                <i class="fas fa-star fa-xs"></i>
-                                <i class="fas fa-star fa-xs"></i>
-                                <i class="fas fa-star fa-xs"></i>
-                            </div>
-                        </div>
-            
-                        <div class="top-product_see_more">
-                            <a href="#">VER MÁS DETALLE</a>
-                        </div>
-                        <div class="top-product_image">
-                            
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="product mb">
-                    
-            
-                    <div>
-                        <div class="top-products_detail">
-                            <span>Artículo de Nombre x</span>
-                            <div class="top-products_detail_price_stock">
-                                <span>$ 200.00</span>
-                                <span>16 unid. en stock</span>
-                            </div>
-                            <div class="top-products_detail-stars">
-                                <i class="fas fa-star fa-xs"></i>
-                                <i class="fas fa-star fa-xs"></i>
-                                <i class="fas fa-star fa-xs"></i>
-                                <i class="fas fa-star fa-xs"></i>
-                                <i class="fas fa-star fa-xs"></i>
-                            </div>
-                        </div>
-            
-                        <div class="top-product_see_more">
-                            <a href="#">VER MÁS DETALLE</a>
-                        </div>
-                        <div class="top-product_image">
-                            
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="product mb">
-            
-                    <div>
-                        <div class="top-products_detail">
-                            <span>Artículo de Nombre x</span>
-                            <div class="top-products_detail_price_stock">
-                                <span>$ 200.00</span>
-                                <span>16 unid. en stock</span>
-                            </div>
-                            <div class="top-products_detail-stars">
-                                <i class="fas fa-star fa-xs"></i>
-                                <i class="fas fa-star fa-xs"></i>
-                                <i class="fas fa-star fa-xs"></i>
-                                <i class="fas fa-star fa-xs"></i>
-                                <i class="fas fa-star fa-xs"></i>
-                            </div>
-                        </div>
-            
-                        <div class="top-product_see_more">
-                            <a href="#">VER MÁS DETALLE</a>
-                        </div>
-                        <div class="top-product_image">
-                            
-                        </div>
-                    </div>
-                </div>
+                <% for (let i = 0; i < 4; i++){ %>
 
-                <div class="product mb">
-            
-                    <div>
-                        <div class="top-products_detail">
-                            <span>Artículo de Nombre x</span>
-                            <div class="top-products_detail_price_stock">
-                                <span>$ 200.00</span>
-                                <span>16 unid. en stock</span>
+                    <div class="product mb">
+                        <div>
+                            <div class="top-products_detail">
+                                <span><%= products[i].name %></span>
+                                <div class="top-products_detail_price_stock">
+                                    <span>$ 200.00</span>
+                                    <span>16 unid. en stock</span>
+                                </div>
+                                <div class="top-products_detail-stars">
+                                    <i class="fas fa-star fa-xs"></i>
+                                    <i class="fas fa-star fa-xs"></i>
+                                    <i class="fas fa-star fa-xs"></i>
+                                    <i class="fas fa-star fa-xs"></i>
+                                    <i class="fas fa-star fa-xs"></i>
+                                </div>
                             </div>
-                            <div class="top-products_detail-stars">
-                                <i class="fas fa-star fa-xs"></i>
-                                <i class="fas fa-star fa-xs"></i>
-                                <i class="fas fa-star fa-xs"></i>
-                                <i class="fas fa-star fa-xs"></i>
-                                <i class="fas fa-star fa-xs"></i>
+                
+                            <div class="top-product_see_more">
+                                <a href="#">VER MÁS DETALLE</a>
                             </div>
-                        </div>
-            
-                        <div class="top-product_see_more">
-                            <a href="#">VER MÁS DETALLE</a>
-                        </div>
-                        <div class="top-product_image">
-                            
+                            <div class="top-product_image">
+                                
+                            </div>
                         </div>
                     </div>
-                </div>
+                <% } %>
             </div>
             
             

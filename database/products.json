@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "name": "lorem",
+    "description": "dsfs",
+    "image": "articulo1.jpg",
+    "category": "pista",
+    "price": 199
+  },
+  {
+    "id": 2,
+    "name": "lorem",
+    "description": "dsfs",
+    "image": "articulo2.jpg",
+    "category": "pista",
+    "price": 199
+  },
+  {
+    "id": 3,
+    "name": "lorem3",
+    "description": "dsfs",
+    "image": "articulo3.jpg",
+    "category": "pista",
+    "price": 199
+  },
+  {
+    "id": 4,
+    "name": "lorem",
+    "description": "dsfs",
+    "image": "articulo4.jpg",
+    "category": "pista",
+    "price": 199
+  }
+]

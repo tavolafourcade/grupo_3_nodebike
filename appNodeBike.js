@@ -31,8 +31,8 @@ app.use(express.static(path.join(__dirname, "./public")));
 app.use(methodOverride("_method"));
 
 app.use(express.static(publicFolderPath)); 
-app.use(mainRout); /*Vista  home y productCart */
-app.use(productsRout); /*Desarrollando*/
+app.use('/',mainRout); /*Vista  home y productCart */
+app.use('/productos',productsRout); /*Desarrollando*/
 app.use("/users", usersRout); /*Desarrollando*/
 
 

@@ -1,4 +1,7 @@
 const path= require("path");
+const fs = require('fs');
+const productsFilePath = path.join(__dirname, "../database/products.json");
+const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
 
 let mainController = { 
 
@@ -18,7 +21,7 @@ let mainController = {
     },
 
     productList:(req, res) =>{
-        res.render( "products/productList");
+        res.render( "products/productList", {products: products});
     }
 
 };
