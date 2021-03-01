@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head') %>
+<body>
+    <%- include('../partials/header') %>
+<h1>User List</h1>
+<ul>
+    <% for(let i=0; i<usersController.length; i++){ %>
+        <li>
+           <a href="users/detail/<%=usersController[i].id %>"> <%= usersController[i].name %> </a>
+           <!--DELETE-->
+           <form method="POST" action="users/delete?_method=DELETE<%=usersController[i].id %>">
+           <button>Delete</button>
+            </form>
+        </li>
+    <% } %>
+</ul>
+<h2>Search</h2>
+<form action="users/search" method="GET">
+    <input type="text" name="search">
+    <input type="submit" value="search">
+
+</form>
+
+    <%- include('../partials/footer') %>
+</body>
+</html>
