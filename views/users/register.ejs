@@ -8,12 +8,6 @@
 
         <!-- Form section -->
         <main class="reg-form">
-            <% if(locals.errors) { %>
-                <% for( let oneError in errors ) { %>
-                    <p><%= errors[oneError].msg %></p>
-                <% } %>
-            <%} %>
-            
             <div class="header-form">
             <div class="first-line">
                 <a href="/"><i class="fas fa-chevron-left" id="back-sign"></i></a>
@@ -22,70 +16,137 @@
             <div>Completa tus datos personales</div>
             </div>
 
-            <form class="main-form" action="/users/register" method="POST" enctype="multipart/form-data"> <!--revisar si el action es correcto-->
+            <form class="main-form" action="/users/register" method="POST" enctype="multipart/form-data"> 
                 <div class="control-formulario">
                     <label for="nombre">Nombre</label><br>
-                    <input type="text" id="nombre" name="nombre" placeholder="Nombres" class="control" minlength="2" pattern="[^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$
-                    ]" required>
+                    <input 
+                    type="text" 
+                    id="nombre" 
+                    name="nombre" 
+                    placeholder="Nombres" 
+                    class="control <%= locals.errors && errors.nombre ? 'is-invalid' : null %>"
+                    value = "<%= locals.oldData && oldData.nombre ? oldData.nombre : null %>"> <!--REVISAR ESTA LÍNEA, INDICA QUE FALTA UN PARÉNTESIS EN LA COMPILACIÓN-->
+                    
                     <% if(locals.errors && errors.nombre) { %>
-                        <div clss="text-danger"> 
-                            Aquí va a ir el error
+                        <div class="text-danger"> 
+                            <%= errors.nombre.msg %>
                         </div>
                     <% } %>
                 </div>
 
                 <div class="control-formulario">
                     <label for="apellidoPaterno">Apellido paterno</label><br>
-                    <input type="text" id="apellidoPaterno" name="apellidoPaterno" placeholder="Apellido paterno" class="control" minlength="2" pattern="[^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$
-                    ]" required>
+                    <input 
+                    type="text" 
+                    id="apellidoPaterno" 
+                    name="apellidoPaterno" 
+                    placeholder="Apellido paterno" 
+                    class="control  <%= locals.errors && errors.apellidoPaterno ? 'is-invalid' : null %>">
+                    <% if(locals.errors && errors.apellidoPaterno) { %>
+                        <div class="text-danger"> 
+                            <%= errors.apellidoPaterno.msg %>
+                        </div>
+                    <% } %>
                 </div>
                 
                 <div class="control-formulario">
-                <label for="apellidoMaterno">Apellido materno</label><br>
-                <input type="text" id="apellidoMaterno" name="apellidoMaterno" placeholder="Apellido materno" class="control" minlength="2" pattern="[^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$
-                ]" required>
+                    <label for="apellidoMaterno">Apellido 
+                        materno</label><br>
+                    <input 
+                    type="text" 
+                    id="apellidoMaterno" 
+                    name="apellidoMaterno" 
+                    placeholder="Apellido materno" 
+                    class="control  <%= locals.errors && errors.apellidoMaterno ? 'is-invalid' : null %>">
+                    <% if(locals.errors && errors.apellidoMaterno) { %>
+                        <div class="text-danger"> 
+                            <%= errors.apellidoMaterno.msg %>
+                        </div>
+                    <% } %>
                 </div>
 <!--AGRENDAO LÍNEA PARA PODER CARGAR ARCHIVOS-->
-                <label><b>Imagen de perfil:</b></label>
-                <input type="file" name="imagenUsuario" id="imagenUsuario" class="control-formulario">
+                <div class="control-formulario">
+                    <label>Imagen de perfil:</label>
+                    <input type="file" name="imagenUsuario" id="imagenUsuario" class="control">
+                    <% if(locals.errors && errors.imagenUsuario) { %>
+                        <div class="text-danger"> 
+                            <%= errors.imagenUsuario.msg %>
+                        </div>
+                    <% } %>
+                </div>
 <!--------------------------------------------------------------------------------------------S-->
                 <div class="control-formulario">
                     <label for="email">Email</label><br>
-                    <input type="email" id="email" name="email" placeholder="ejemplo@nodebike.com.pe" required>
+                    <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    placeholder="ejemplo@nodebike.com.pe"
+                    class="control  <%= locals.errors && errors.email ? 'is-invalid' : null %>">
+                    <% if(locals.errors && errors.email) { %>
+                        <div class="text-danger"> 
+                            <%= errors.email.msg %>
+                        </div>
+                    <% } %>
                 </div>
 
                 <div class="control-formulario">
                     <label for="contraseña">Clave</label><br>
-                    <input type="password" name="password" id="contraseña" class="control" minlength="7" pattern="[^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$
-                    ]" title="La contraseña debe contener valores alfanuméricos, no se aceptan mayúsculas y se aceptan un mínimo de 7 caracteres" required>
+                    <input 
+                    type="password" 
+                    name="password" 
+                    id="contraseña" 
+                    class="control  <%= locals.errors && errors.password ? 'is-invalid' : null %>">
+                    <% if(locals.errors && errors.password) { %>
+                        <div class="text-danger"> 
+                            <%= errors.password.msg %>
+                        </div>
+                    <% } %>
                 </div>
 
                 <div class="control-formulario">
                     <label for="passwordx2">Confirmar clave</label><br>
-                    <input type="password" name="passwordx2" id="passwordx2" class="control" minlength="7" pattern="[^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$
-                    ]" title="La contraseña debe contener valores alfanuméricos, no se aceptan mayúsculas y se aceptan un mínimo de 7 caracteres" required>
+                    <input 
+                    type="password" 
+                    name="passwordx2" 
+                    id="passwordx2" 
+                    class="control  <%= locals.errors && errors.passwordx2 ? 'is-invalid' : null %>">
+                    <% if(locals.errors && errors.passwordx2) { %>
+                        <div class="text-danger"> 
+                            <%= errors.passwordx2.msg %>
+                        </div>
+                    <% } %>
                 </div>
 
                 <div class="control-formulario">
                     <label>País de residencia</label><br>
-                    <select name="paises" class="control">
+                    <select 
+                    name="paises" 
+                    class="control <%= locals.errors && errors.paises ? 'is-invalid' : null %>">
                         <option value="">Elige un país</option>
                         <%
                             let paises = ['Peru', 'Canada', 'Colombia', 'Chile', 'Ecuador'];
                          %>
                          <% for (const unPais of paises) { %>
-                            <option value="<%= unPais %>"> <%= unPais %> </option>
+                            <option 
+                                value="<%= unPais %>"
+                                <%= locals.oldData && (unPais === oldData.paises) ? 'selected' : null  %> <!--REVISAR ESTA LÍNEA-->
+                                > <%= unPais %> 
+                            </option>
                          <% } %>
-                        <!--<option value="peru" selected>Perú</option>
-                        <option value="canada">Canádá</option>
-                        <option value="colombia">Colombia</option>
-                        <option value="chile">Chile</option>
-                        <option value="ecuador">Ecuador</option>-->
-                    </select></div>
+                    </select>
+                        <% if(locals.errors && errors.paises) { %>
+                            <div class="text-danger"> 
+                                <%= errors.paises.msg %>
+                            </div>
+                        <% } %>
+                </div>
 
                     <div class="control-formulario">
                         <label>Tipo de documento</label><br>
-                        <select name="tipoDocumento" class="control">
+                        <select 
+                        name="tipoDocumento" 
+                        class="control <%= locals.errors && errors.tipoDocumento ? 'is-invalid' : null %>">
                             <option value="">Elige tipo de documento de identificación</option>
                             <%
                                 let documentos = ['DNI', 'Pasaporte', 'Carnet de extranjería'];
@@ -97,7 +158,16 @@
 
                         <div class="control-formulario">
                             <label for="numeroDocumento">Número de documento</label><br>
-                            <input type="text" name="numeroDocumento" id="numeroDocumento" class="control" minlength="8"  placeholder="75296358" pattern="[^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$]" required>
+                            <input 
+                            type="text" 
+                            name="numeroDocumento" 
+                            id="numeroDocumento" 
+                            class="control <%= locals.errors && errors.numeroDocumento ? 'is-invalid' : null %>" >
+                            <% if(locals.errors && errors.numeroDocumento) { %>
+                                <div class="text-danger"> 
+                                    <%= errors.numeroDocumento.msg %>
+                                </div>
+                            <% } %>
                         </div>
 
                         <div class="control-formulario">
@@ -113,7 +183,17 @@
 
                         <div class="control-formulario">
                             <label for="celular">Número de documento</label><br>
-                            <input type="text" name="celular" id="celular" class="control" minlength="9"  placeholder="954562253" pattern="[^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$]" required>
+                            <input 
+                            type="text" 
+                            name="celular" 
+                            id="celular" 
+                            class="control <%= locals.errors && errors.celular ? 'is-invalid' : null %>" 
+                            placeholder="954562253">
+                            <% if(locals.errors && errors.celular) { %>
+                                <div class="text-danger"> 
+                                    <%= errors.celular.msg %>
+                                </div>
+                            <% } %>
                         </div>
 
                         <div class="control-formulario">

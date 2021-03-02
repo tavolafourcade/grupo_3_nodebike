@@ -13,17 +13,14 @@ let mainController = {
 
     processRegister: (req,res) => {
         const resultValidationForm = validationResult(req);
-       
 
         if(resultValidationForm.errors.length > 0) {
             return res.render("users/register", {
                 errors: resultValidationForm.mapped(),
+                oldData: req.body,
             });
-        };
-        /*return res.send({
-            body: req.body,
-            file: req.file,
-        });*/
+        }
+        return res.render("users/login");
     },     
     
     login: (req, res) => {

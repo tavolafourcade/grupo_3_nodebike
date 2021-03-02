@@ -1072,4 +1072,16 @@ td,th {
 /* PRODUCTDETAIL */
 /**********/
 
+/**********/
+/* ERRORES */
+/**********/
+
+.text-danger {
+  color: red;
+}
+
+.is-invalid {
+  background-color: #ff8080;
+  border: solid red 1px;
+}
 

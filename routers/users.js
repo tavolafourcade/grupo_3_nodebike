@@ -41,12 +41,30 @@ const validateRegisterForm = [
     body("passwordx2")
         .notEmpty().withMessage("Debes completar el campo").bail()
         .isLength({min:7}).withMessage("El campo debe contener como mínimo 7 letras"),
+    body("paises")
+        .notEmpty().withMessage("Debes seleciconar un pais").bail(),
+    body("tipoDocumento")
+        .notEmpty().withMessage("Debes seleciconar un tipo de documento").bail(),
     body("numeroDocumento")
         .notEmpty().withMessage("Debes completar el campo").bail()
         .isLength({min:8}).withMessage("El campo debe contener como mínimo 8 números"),
     body("celular")
         .notEmpty().withMessage("Debes completar el campo").bail()
         .isLength({min:9}).withMessage("El campo debe contener como mínimo 9 números, y se debe incluir el código de país"),
+    body("imagenUsuario").custom((value, {req}) =>{
+        let file = req.file;
+        let acceptedExtensions = [".jpg", ".png", ".gif"];
+        let  fileExtension = path.extname(file.originalname);
+        if (!file){
+            throw new Error("Tienes que subir una imagen");
+        }
+        if(!acceptedExtensions.includes(fileExtension)){
+            throw new Error("Las extensiones de archivo permitidas son ${acceptedExtensions.join(', ')} ");
+
+        }
+
+        return true;
+    })
 ];
 
 router.get("/register", usersController.register);//create
