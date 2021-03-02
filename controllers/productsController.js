@@ -12,12 +12,17 @@ let mainController = {
     },
 
     editProduct: function(req, res) {
-        res.render("products/editProduct");
+        let id = req.params.id;
+        let bicicleta = products[id-1];
+        res.render("products/editProduct", {bicicleta: bicicleta});
         /*let idProducto = req.params.id || "Sin ID";*/
     },
 
     productDetail: (req, res) => {
-        res.render( "products/productDetail");
+        let id = req.params.id;
+        console.log('Este es el id ' + id);
+        let bicicleta = products[id-1];
+        res.render( "products/productDetail", {bicicleta: bicicleta});
     },
 
     productList:(req, res) =>{
