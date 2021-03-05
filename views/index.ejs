@@ -28,68 +28,14 @@
             </div>
 
             <div class="list-products">
+
                 <div class="product">
-        
-                    <div>
-                        <div class="top-products_detail">
-                            <span>Artículo de Nombre x</span>
-                            <div class="top-products_detail_price_stock">
-                                <span>$ 200.00</span>
-                                <span>16 unid. en stock</span>
-                            </div>
-                            <div class="top-products_detail-stars">
-                                <i class="fas fa-star fa-xs"></i>
-                                <i class="fas fa-star fa-xs"></i>
-                                <i class="fas fa-star fa-xs"></i>
-                                <i class="fas fa-star fa-xs"></i>
-                                <i class="fas fa-star fa-xs"></i>
-                            </div>
-                        </div>
-            
-                        <div class="top-product_see_more">
-                            <a href="/productDetail">VER MÁS DETALLE</a>
-                        </div>
-                        <div class="top-product_image">
-                            
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="product hidden">
-                    
             
                     <div>
                         <div class="top-products_detail">
-                            <span>Artículo de Nombre x</span>
+                            <span>Artículo 1</span>
                             <div class="top-products_detail_price_stock">
-                                <span>$ 200.00</span>
-                                <span>16 unid. en stock</span>
-                            </div>
-                            <div class="top-products_detail-stars">
-                                <i class="fas fa-star fa-xs"></i>
-                                <i class="fas fa-star fa-xs"></i>
-                                <i class="fas fa-star fa-xs"></i>
-                                <i class="fas fa-star fa-xs"></i>
-                                <i class="fas fa-star fa-xs"></i>
-                            </div>
-                        </div>
-            
-                        <div class="top-product_see_more">
-                            <a href="/productDetail">VER MÁS DETALLE</a>
-                        </div>
-                        <div class="top-product_image">
-                            
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="product hidden">
-            
-                    <div>
-                        <div class="top-products_detail">
-                            <span>Artículo de Nombre x</span>
-                            <div class="top-products_detail_price_stock">
-                                <span>$ 200.00</span>
+                                <span>$ 199</span>
                                 <span>16 unid. en stock</span>
                             </div>
                             <div class="top-products_detail-stars">
@@ -110,32 +56,36 @@
                     </div>
                 </div>
 
-                <div class="product hidden">
+                <% for (let i = 0; i < 3; i++){ %>
+                    <div class="product hidden">
             
-                    <div>
-                        <div class="top-products_detail">
-                            <span>Artículo de Nombre x</span>
-                            <div class="top-products_detail_price_stock">
-                                <span>$ 200.00</span>
-                                <span>16 unid. en stock</span>
+                        <div>
+                            <div class="top-products_detail">
+                                <span><%= products[i+1].name %></span>
+                                <div class="top-products_detail_price_stock">
+                                    <span>$ <%= products[i+1].price %></span>
+                                    <span><%= products[i+1].stock %> unid. en stock</span>
+                                </div>
+                                <div class="top-products_detail-stars">
+                                    <i class="fas fa-star fa-xs"></i>
+                                    <i class="fas fa-star fa-xs"></i>
+                                    <i class="fas fa-star fa-xs"></i>
+                                    <i class="fas fa-star fa-xs"></i>
+                                    <i class="fas fa-star fa-xs"></i>
+                                </div>
                             </div>
-                            <div class="top-products_detail-stars">
-                                <i class="fas fa-star fa-xs"></i>
-                                <i class="fas fa-star fa-xs"></i>
-                                <i class="fas fa-star fa-xs"></i>
-                                <i class="fas fa-star fa-xs"></i>
-                                <i class="fas fa-star fa-xs"></i>
+                
+                            <div class="top-product_see_more">
+                                <a href="/productos/product-detail/<%=products[i].id%>">VER MÁS DETALLE</a>
                             </div>
-                        </div>
-            
-                        <div class="top-product_see_more">
-                            <a href="/productDetail">VER MÁS DETALLE</a>
-                        </div>
-                        <div class="top-product_image">
-                            
+                            <div class="top-product_image">
+                                <img src="/images/<%=products[i+1].image%>" alt="" class="product_image">
+                            </div>
                         </div>
                     </div>
-                </div>
+                <% } %>
+    
+                
             </div>
             
             

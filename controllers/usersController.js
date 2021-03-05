@@ -1,6 +1,6 @@
 const path= require("path");
 const {validationResult} = require("express-validator");
-const jsonTable = require('../database/jsonTable');
+const jsonTable = require('../data/jsonTable');
 const usersModel = jsonTable('users');
 
 

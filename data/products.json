@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Artículo 1",
+    "description": "dsfs",
+    "image": "articulo1.jpg",
+    "category": "Carretera",
+    "price": 199,
+    "stock": 16
+  },
+  {
+    "id": 2,
+    "name": "Artículo 2",
+    "description": "dsfs",
+    "image": "articulo2.jpg",
+    "category": "Cross Country",
+    "price": 450,
+    "stock": 25
+  },
+  {
+    "id": 3,
+    "name": "Artículo 3",
+    "description": "dsfs",
+    "image": "articulo3.jpg",
+    "category": "Eléctrica",
+    "price": 289,
+    "stock": 9
+  },
+  {
+    "id": 4,
+    "name": "Artículo 4",
+    "description": "dsfs",
+    "image": "articulo4.jpg",
+    "category": "Urbana",
+    "price": 690,
+    "stock": 26
+  }
+]

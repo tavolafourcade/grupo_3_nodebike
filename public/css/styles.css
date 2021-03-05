@@ -169,12 +169,26 @@ body {
 }
 
 .top-product_image {
-  background-image: url(../images/detalleproducto-hero1.jpg);
   width: 100%;
   height: 200px;
+  background-image: url("/images/articulo1.jpg");
   background-size: cover;
   background-position: center;
   margin-top: 20px;
+}
+
+.top-product_image_2 {
+  width: 100%;
+  height: 200px;
+  background-image: url("/images/articulo1.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-top: 20px;
+}
+
+.product_image {
+  width: 100%;
+  height: 200px;
 }
 
 /*******************/
@@ -433,99 +447,95 @@ form div input {
 table {
   border-collapse: collapse;
 }
-td,th {
+td,
+th {
   padding: 5px;
   border: 1px solid #828282;
 }
 
 /* BOTTOM ----*/
-.especif-tec{
+.especif-tec {
   padding: 11px 16px;
   /*width: 100%;*/
-
 }
 
-.subtitle-spc{
+.subtitle-spc {
   font-family: var(--font-family1);
   font-size: var(--subtitle-1);
   letter-spacing: var(--sub-1-space);
 }
 
-.tabla-spc{
+.tabla-spc {
   width: 100%;
-  border: 1px solid #828282 ;
+  border: 1px solid #828282;
   margin-top: 13px;
 }
 
-.tabla-spc tr{
+.tabla-spc tr {
   height: 48px;
-
 }
 
-.tabla-spc tr i{
+.tabla-spc tr i {
   width: 11.88px;
   height: 20px;
 }
 
-.first-row{
-  background-color: #E1E2E1;
+.first-row {
+  background-color: #e1e2e1;
 }
 
-.tallaje{
-
+.tallaje {
   padding: 16px;
 }
 
-.body-table{
+.body-table {
   width: 477px;
   height: 275px;
-  overflow-y: hidden; 
+  overflow-y: hidden;
   overflow-x: scroll;
 }
 
-.table-head{
-  color:white;
+.table-head {
+  color: white;
   background-color: var(--primary-light);
 }
 
-.tallaje-image{
+.tallaje-image {
   width: 382px;
   height: 292px;
 }
 
-.tallaje-image img{
-  width:100%;
-}
-
-.body-table2{
-  width: 660px;
-  height: 120px;
-
-}
-
-
-/*------------------------------
---------------------COMMENTS SECTION-----------------------*/
-.opinion{
-  background-color: #E1E2E1;
+.tallaje-image img {
   width: 100%;
 }
 
-.calification{
+.body-table2 {
+  width: 660px;
+  height: 120px;
+}
+
+/*------------------------------
+--------------------COMMENTS SECTION-----------------------*/
+.opinion {
+  background-color: #e1e2e1;
+  width: 100%;
+}
+
+.calification {
   width: 76px;
   height: 15px;
   display: flex;
   flex-wrap: nowrap;
 }
 
-.sec-filter{
+.sec-filter {
   width: 100%;
   height: 51px;
-  color:white;
-  background-color:var(--primary-light);
+  color: white;
+  background-color: var(--primary-light);
 }
 
-.comment-box{
+.comment-box {
   width: 382px;
   height: 123px;
   border-radius: 10px;
@@ -533,24 +543,18 @@ td,th {
   margin-top: 13px;
   margin-bottom: 13px;
   position: relative;
-
 }
 
-.profile-image{
+.profile-image {
   width: 128px;
   height: 123px;
   border-radius: 10px;
 }
 
-.profile-image img{
+.profile-image img {
   width: 100%;
   height: 100%;
-  
 }
-
-
-
-
 
 .top-products_detail span {
   font-size: var(--h6);
@@ -1071,5 +1075,3 @@ td,th {
 /**********/
 /* PRODUCTDETAIL */
 /**********/
-
-

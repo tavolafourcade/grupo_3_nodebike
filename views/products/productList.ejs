@@ -46,8 +46,8 @@
                             <div class="top-products_detail">
                                 <span><%= products[i].name %></span>
                                 <div class="top-products_detail_price_stock">
-                                    <span>$ 200.00</span>
-                                    <span>16 unid. en stock</span>
+                                    <span><%= products[i].price %></span>
+                                    <span> <%= products[i].stock %> unid. en stock</span>
                                 </div>
                                 <div class="top-products_detail-stars">
                                     <i class="fas fa-star fa-xs"></i>
@@ -61,8 +61,8 @@
                             <div class="top-product_see_more">
                                 <a href="/productos/product-detail/<%=products[i].id%>">VER MÁS DETALLE</a>
                             </div>
-                            <div class="top-product_image">
-                                
+                            <div class="top-product_image_2">
+                                <img src="/images/<%=products[i].image%>" alt="" class="product_image">
                             </div>
                         </div>
                     </div>

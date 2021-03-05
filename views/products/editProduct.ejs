@@ -5,7 +5,7 @@
     <%- include('../partials/header') %> <!--Entiendo que debería haber un link que jale a la edición o busqueda de un producto-->
     <main>
         
-                   <form action="/products/edit" method="POST">
+                   <form action="/edit/<%=:id %>" method="POST">
                         <p>
                             <label for="name">Nombre del producto:</label>
                             <input id="name" name="name" type="text" value="<%= bicicleta.name %>"> <!--Debo de colocar un objeto literal-->
