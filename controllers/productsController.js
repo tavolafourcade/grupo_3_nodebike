@@ -13,8 +13,11 @@ let mainController = {
 
     editProduct: function(req, res) {
         let id = req.params.id;
-        let productToEdit = products[id-1];
-        res.render("products/editProduct", {productToEdit: productToEdit});
+        let bicicleta = products[id-1];
+        
+        res.render("products/editProduct", {bicicleta: bicicleta});
+        // 
+        // res.render("products/editProduct", {productToEdit: productToEdit});
         /*let idProducto = req.params.id || "Sin ID";*/
     },
 
