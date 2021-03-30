@@ -8,11 +8,16 @@ const productsRout = require("./routers/products.js");
 const usersRout = require("./routers/users.js");
 const logMiddleware = require("./middlewares/logMiddleware");
 
+//Implementando Session
+let session = require('express-session');
 
 const app = express();
 const publicFolderPath = path.join(__dirname, "./public");/*cambié resolve por join */
 //const direction=path.dirname(publicFolderPath);
 //console.log(direction);
+
+//Incorporando Session como middleware
+app.use(session({secret:"secret"}))
 
 app.listen(3060, () => {
     console.log("El servidor 3060 está corriendo");
