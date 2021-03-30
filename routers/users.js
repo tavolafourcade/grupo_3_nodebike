@@ -57,7 +57,6 @@ router.post("/register", fileUpload.single("imagenUsuario"), validateRegisterFor
 //implementar multer como  midleware
 //router.post("/register", fileUpload.single("imagenUsuario"), usersController.create);
 
-router.get("/login", usersController.login);
 
 router.get("/profile/:userId", usersController.profile);
 
@@ -73,4 +72,8 @@ router.delete("/delete/:idUser", function(req,res){
     res.send("SOY DELETE!");
 })
 */
+
+router.get('/login', usersController.login);
+router.post('/login',
+    check('email').isEmail().withMessage('Email invalido'),usersController.processLogin);
 module.exports = router;

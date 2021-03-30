@@ -17,24 +17,24 @@
             </div>
 
 
-     <form class="main-form" action="/" method="GET">
-     <div class="control-formulario">
-        <label for="email">Email</label><br>
-        <input type="email" id="email" name="email" placeholder="ejemplo@nodebike.com.pe" required>
-    </div>
+    <form class="main-form" action="/users/login" method="POST">
+        <div class="control-formulario">
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" placeholder="ejemplo@nodebike.com.pe" required>
+        </div>
 
-    <div class="control-formulario">
-        <label for="contraseña">Clave</label><br>
-        <input type="password" name="password" id="contraseña" class="control" minlength="7" pattern="[^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$
-        ]" title="La contraseña debe contener valores alfanuméricos, no se aceptan mayúsculas y se aceptan un mínimo de 7 caracteres" required>
-    </div>
+        <div class="control-formulario">
+            <label for="contraseña">Clave</label><br>
+            <input type="password" name="password" id="contraseña" class="control" minlength="7" pattern="[^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$
+            ]" title="La contraseña debe contener valores alfanuméricos, no se aceptan mayúsculas y se aceptan un mínimo de 7 caracteres" required>
+        </div>
 
-    <div class="control-formulario">
-        <div class="line"><input type="checkbox" name="guardarContrasenha" value="guardarContrasenha" checked>Recordar usuario y contraseña</div>
-    </div>
+        <div class="control-formulario">
+            <div class="line"><input type="checkbox" name="guardarContrasenha" value="guardarContrasenha" checked>Recordar usuario y contraseña</div>
+        </div>
 
-    <div class="primary-button"><button type="submit" class="boton-formulario">INICIAR SESIÓN</button></div>
-</form>
+        <div class="primary-button"><button type="submit" class="boton-formulario">INICIAR SESIÓN</button></div>
+    </form>
 </main>
      <!--End form section-->
 

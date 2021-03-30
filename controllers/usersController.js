@@ -20,10 +20,6 @@ let mainController = {
                 errors: resultValidationForm.mapped(),
             });
         };
-        /*return res.send({
-            body: req.body,
-            file: req.file,
-        });*/
     },     
     
     login: (req, res) => {
@@ -34,6 +30,16 @@ let mainController = {
     profile: (req,res) =>{
         res.render("users/profile");
     },
+
+    processLogin: (req,res)=>{
+        let errors = validationResult(req);
+
+        if (errors.isEmpty()){
+
+        }else{
+            return res.render('users/login', {errors: errors.errors});
+        }
+    }
 
   
 
