@@ -110,3 +110,36 @@
 Desarrollar este último Sprint fue más retador como resultado de no contar con los 03 miembros del equipo.
 
 Se elaboró en gran medida lo solicitado para este Sprint a pesar de las dificultades enfrentadas (la pérdida de 02 miembros del equipo).
+
+## Sprint 5
+
+#### Start Doing:
+
+- Volver a revisar el material del CRUD para entender los puntos débiles de la arquitectura actual de la app y completar las acciones pendientes.
+
+#### More of:
+
+- Comentar el código
+- Ordenar el código y la indentación.
+- Reducir el código de más.
+- Implementar la lógica.
+- Completar las acciones faltantes del Sprint anterior.
+
+#### Keep Doing:
+
+- Elaborar la última versión del Trello.
+- Finiquitar partes relevantes del Sprint.
+
+#### Less of:
+
+- Procastinar en aspectos distintos a lo requerido en el Sprint 5.
+
+#### Stop Doing:
+
+- Dedicar esfuerzos a aspectos poco relevantes.
+
+#### Resumen sprint:
+
+De todos los Sprint realizados, este ha sido el más complejo y demandante.
+
+Se elaboró en gran medida lo solicitado para este Sprint a pesar de las dificultades enfrentadas (la pérdida de 02 miembros del equipo).

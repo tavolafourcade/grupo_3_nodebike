@@ -60,7 +60,11 @@
                 
                             <div class="top-product_see_more">
                                 <a href="/productos/product-detail/<%=products[i].id%>">VER MÁS DETALLE</a>
+                                
                             </div>
+                            <form class="top-product_see_more" method="POST" action="/productos/delete/<%=products[i].id%>?_method=DELETE">
+                                <button href="#" type="submit">Eliminar</button>
+                            </form>
                             <div class="top-product_image_2">
                                 <img src="/images/<%=products[i].image%>" alt="" class="product_image">
                             </div>
