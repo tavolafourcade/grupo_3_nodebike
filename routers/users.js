@@ -75,6 +75,13 @@ router.delete("/delete/:idUser", function(req,res){
 
 router.get('/login', usersController.login);
 router.post('/login',usersController.processLogin);
+router.get('/check',(req,res)=>{
+    if (req.session.usuarioLogueado == undefined){
+        res.send("No estas logueado");
+    }else{
+        res.send("El usuario esta logueado" + req.session.usuarioLogueado.email);
+    }
+})
 // router.post('/login',
 //     check('email').isEmail().withMessage('Email invalido'),usersController.processLogin);  
 module.exports = router;

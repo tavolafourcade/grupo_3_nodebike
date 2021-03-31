@@ -91,7 +91,7 @@ let mainController = {
             
             }
             req.session.usuarioLogueado = usuarioAloguearse;
-            res.render('products/productList');
+            res.redirect('/');
         }else{
             return res.render('users/login', {errors: errors.errors});
         }
