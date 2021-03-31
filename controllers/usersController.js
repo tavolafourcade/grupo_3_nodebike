@@ -67,13 +67,31 @@ let mainController = {
         let errors = validationResult(req);
 
         if (errors.isEmpty()){
-            let usersJSON = fs.readFileSync('users.json', {errors: errors.errors})
+            let usersJSON = fs.readFileSync(usersFilePath, 'utf-8', {errors: errors.errors})
+            
             let users;
-            if (usersJSON == ""){
+            let usuarioAloguearse;
+            if (usersFile == ""){
                 users = [];
             }else{
-                users.JSON.parse(usersJSON);  
+                users = JSON.parse(usersJSON); 
             }
+            for (let i = 0; i < users.length; i++){
+                if (users[i].email == req.body.email){
+                    if (users[i].password == req.body.password){
+                        usuarioAloguearse = users[i];
+                        break;
+                    }
+                }
+            }
+            if (usuarioAloguearse == undefined){
+                return res.render('users/login', {errors: [
+                    {msg: 'Credenciales invalidas'}
+                ]});
+            
+            }
+            req.session.usuarioLogueado = usuarioAloguearse;
+            res.render('products/productList');
         }else{
             return res.render('users/login', {errors: errors.errors});
         }
