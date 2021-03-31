@@ -25,8 +25,7 @@
             <form class="main-form" action="/users/register" method="POST" enctype="multipart/form-data"> <!--revisar si el action es correcto-->
                 <div class="control-formulario">
                     <label for="nombre">Nombre</label><br>
-                    <input type="text" id="nombre" name="nombre" placeholder="Nombres" class="control" minlength="2" pattern="[^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$
-                    ]" required>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombres" class="control" minlength="2"  required>
                     <% if(locals.errors && errors.nombre) { %>
                         <div clss="text-danger"> 
                             Aquí va a ir el error
@@ -36,14 +35,12 @@
 
                 <div class="control-formulario">
                     <label for="apellidoPaterno">Apellido paterno</label><br>
-                    <input type="text" id="apellidoPaterno" name="apellidoPaterno" placeholder="Apellido paterno" class="control" minlength="2" pattern="[^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$
-                    ]" required>
+                    <input type="text" id="apellidoPaterno" name="apellidoPaterno" placeholder="Apellido paterno" class="control" minlength="2"  required>
                 </div>
                 
                 <div class="control-formulario">
                 <label for="apellidoMaterno">Apellido materno</label><br>
-                <input type="text" id="apellidoMaterno" name="apellidoMaterno" placeholder="Apellido materno" class="control" minlength="2" pattern="[^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$
-                ]" required>
+                <input type="text" id="apellidoMaterno" name="apellidoMaterno" placeholder="Apellido materno" class="control" minlength="2"  required>
                 </div>
 <!--AGRENDAO LÍNEA PARA PODER CARGAR ARCHIVOS-->
                 <label><b>Imagen de perfil:</b></label>
@@ -56,14 +53,12 @@
 
                 <div class="control-formulario">
                     <label for="contraseña">Clave</label><br>
-                    <input type="password" name="password" id="contraseña" class="control" minlength="7" pattern="[^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$
-                    ]" title="La contraseña debe contener valores alfanuméricos, no se aceptan mayúsculas y se aceptan un mínimo de 7 caracteres" required>
+                    <input type="text" name="password" id="contraseña" class="control" minlength="7"  title="Minimum eight characters, at least one letter, one number and one special character" required>
                 </div>
 
                 <div class="control-formulario">
                     <label for="passwordx2">Confirmar clave</label><br>
-                    <input type="password" name="passwordx2" id="passwordx2" class="control" minlength="7" pattern="[^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$
-                    ]" title="La contraseña debe contener valores alfanuméricos, no se aceptan mayúsculas y se aceptan un mínimo de 7 caracteres" required>
+                    <input type="text" name="passwordx2" id="passwordx2" class="control" minlength="7" title="La contraseña debe contener valores alfanuméricos, no se aceptan mayúsculas y se aceptan un mínimo de 7 caracteres" required>
                 </div>
 
                 <div class="control-formulario">
@@ -97,7 +92,7 @@
 
                         <div class="control-formulario">
                             <label for="numeroDocumento">Número de documento</label><br>
-                            <input type="text" name="numeroDocumento" id="numeroDocumento" class="control" minlength="8"  placeholder="75296358" pattern="[^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$]" required>
+                            <input type="text" name="numeroDocumento" id="numeroDocumento" class="control" minlength="8"  placeholder="75296358"  required>
                         </div>
 
                         <div class="control-formulario">
@@ -112,8 +107,8 @@
                         </div>
 
                         <div class="control-formulario">
-                            <label for="celular">Número de documento</label><br>
-                            <input type="text" name="celular" id="celular" class="control" minlength="9"  placeholder="954562253" pattern="[^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$]" required>
+                            <label for="celular">Número de celular</label><br>
+                            <input type="text" name="celular" id="celular" class="control" minlength="9"  placeholder="954562253" pattern="[789][0-9]{9}" required>
                         </div>
 
                         <div class="control-formulario">

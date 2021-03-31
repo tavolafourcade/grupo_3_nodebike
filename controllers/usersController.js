@@ -2,6 +2,9 @@ const path= require("path");
 const {validationResult} = require("express-validator");
 const jsonTable = require('../data/jsonTable');
 const usersModel = jsonTable('users');
+const fs = require('fs');
+let usersFilePath =  path.resolve(__dirname, '../data/users.json');
+let usersFile = fs.readFileSync(usersFilePath, 'utf-8');
 
 
 let mainController = { 
@@ -19,6 +22,35 @@ let mainController = {
             return res.render("users/register", {
                 errors: resultValidationForm.mapped(),
             });
+        }else{
+            let {id, nombre, apellidoPaterno, email,password, category} = req.body;
+            let image = req.file.filename;
+
+            let user = {
+                id: null,
+                first_name: nombre,
+                last_name: apellidoPaterno,
+                email,
+                password,
+                category: 'user', 
+                image
+            };
+
+            let users;
+
+            if ( usersFile === '' ) {
+                users = [];
+            } else {
+                users = JSON.parse(usersFile);
+            }
+
+            user.id = users.length + 1;
+            console.log(user);
+            users.push(user);
+            usersJSON = JSON.stringify(users);
+            fs.writeFileSync(usersFilePath, usersJSON);
+
+            res.redirect('/');
         };
     },     
     
@@ -35,11 +67,17 @@ let mainController = {
         let errors = validationResult(req);
 
         if (errors.isEmpty()){
-
+            let usersJSON = fs.readFileSync('users.json', {errors: errors.errors})
+            let users;
+            if (usersJSON == ""){
+                users = [];
+            }else{
+                users.JSON.parse(usersJSON);  
+            }
         }else{
             return res.render('users/login', {errors: errors.errors});
         }
-    }
+    },
 
   
 

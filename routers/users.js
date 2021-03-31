@@ -74,6 +74,7 @@ router.delete("/delete/:idUser", function(req,res){
 */
 
 router.get('/login', usersController.login);
-router.post('/login',
-    check('email').isEmail().withMessage('Email invalido'),usersController.processLogin);
+router.post('/login',usersController.processLogin);
+// router.post('/login',
+//     check('email').isEmail().withMessage('Email invalido'),usersController.processLogin);  
 module.exports = router;
