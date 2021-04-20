@@ -3,7 +3,8 @@ let router= express.Router();
 const path=require("path");
 const{body} = require("express-validator");//usando express validator 
 let usersController = require("../controllers/usersController");
-    
+let guestMiddleware = require('../middlewares/guestMiddleware');
+
 
 const multer = require("multer");
 
@@ -49,7 +50,7 @@ const validateRegisterForm = [
         .isLength({min:9}).withMessage("El campo debe contener como mínimo 9 números, y se debe incluir el código de país"),
 ];
 
-router.get("/register", usersController.register);//create
+router.get("/register", guestMiddleware, usersController.register);//create
 
 //Esta ruta se encargará de procesar el registro
 router.post("/register", fileUpload.single("imagenUsuario"), validateRegisterForm, usersController.processRegister);//store //show
