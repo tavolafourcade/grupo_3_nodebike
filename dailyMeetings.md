@@ -24,3 +24,15 @@
 - Priorizar los puntos sobre los que se tienen más idea.
 - Revisar la sesión de Armado de Login
 - Priorizar los puntos 4, 5, 6 y 8 en el desarrollo.
+
+## Jueves 15/04/2021
+
+#### Temas abordados
+
+- Atraso en las clases respecto a base de datos.
+- Medidas correctivas para alcanzar el objetivo del entregable.
+
+#### Acuerdos llegados
+
+- Priorizar los puntos sobre los que se tienen más idea.
+- Revisar las sesiones más relevantes dentro del Sprint 6 sobre las que no se tiene conocimiento pleno aún.
