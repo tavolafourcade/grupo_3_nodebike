@@ -850,6 +850,7 @@ th {
   letter-spacing: var(--h6-space);
   font-family: var(--font-family1);
   margin: auto;
+  color: #000a12;
 }
 
 .first-line {

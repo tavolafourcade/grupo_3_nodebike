@@ -51,6 +51,9 @@ let mainController = {
             fs.writeFileSync(usersFilePath, usersJSON);
 
             res.redirect('/');
+
+            //model.findOne({ where: { id } }).then(data => { return data });
+            //model.create(paylod).then(data => { return data });
         };
     },     
     

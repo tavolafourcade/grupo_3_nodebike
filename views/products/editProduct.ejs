@@ -6,6 +6,10 @@
     <main>
         
                    <form action="/products/edit/<%=bicicleta.id%>?_method=PUT" method="POST">
+
+                        <div class="errores">
+                            <ul></ul>
+                        </div>
                         <p>
                             <label for="name">Nombre del producto:</label>
                             <input id="name" name="name" type="text" value="<%= bicicleta.name %>"> <!--Debo de colocar un objeto literal-->
@@ -36,5 +40,6 @@
 
 
     <%- include('../partials/footer') %>
+    <script src="/js/productValidator.js"></script>
 </body>
 </html>

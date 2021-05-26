@@ -8,39 +8,42 @@
 
         <!-- Form section -->
         <main class="reg-form">
-            <% if(locals.errors) { %>
+            <!-- <% if(locals.errors) { %>
                 <% for( let oneError in errors ) { %>
                     <p><%= errors[oneError].msg %></p>
                 <% } %>
-            <%} %>
+            <%} %> -->
             
             <div class="header-form">
             <div class="first-line">
                 <a href="/"><i class="fas fa-chevron-left" id="back-sign"></i></a>
                 <div class="title-form">Crear una cuenta</div>
             </div>
-            <div>Completa tus datos personales</div>
+            <div style="color: black">Completa tus datos personales</div>
             </div>
 
             <form class="main-form" action="/users/register" method="POST" enctype="multipart/form-data"> <!--revisar si el action es correcto-->
+                <div class = "errores">
+                    <ul></ul>
+                 </div>
                 <div class="control-formulario">
                     <label for="nombre">Nombre</label><br>
-                    <input type="text" id="nombre" name="nombre" placeholder="Nombres" class="control" minlength="2"  required>
-                    <% if(locals.errors && errors.nombre) { %>
-                        <div clss="text-danger"> 
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombres" class="control" >
+                    <!-- <% if(locals.errors && errors.nombre) { %>
+                        <div class="text-danger"> 
                             Aquí va a ir el error
                         </div>
-                    <% } %>
+                    <% } %> -->
                 </div>
 
                 <div class="control-formulario">
                     <label for="apellidoPaterno">Apellido paterno</label><br>
-                    <input type="text" id="apellidoPaterno" name="apellidoPaterno" placeholder="Apellido paterno" class="control" minlength="2"  required>
+                    <input type="text" id="apellidoPaterno" name="apellidoPaterno" placeholder="Apellido paterno" class="control" >
                 </div>
                 
                 <div class="control-formulario">
                 <label for="apellidoMaterno">Apellido materno</label><br>
-                <input type="text" id="apellidoMaterno" name="apellidoMaterno" placeholder="Apellido materno" class="control" minlength="2"  required>
+                <input type="text" id="apellidoMaterno" name="apellidoMaterno" placeholder="Apellido materno" class="control" >
                 </div>
 <!--AGRENDAO LÍNEA PARA PODER CARGAR ARCHIVOS-->
                 <label><b>Imagen de perfil:</b></label>
@@ -48,17 +51,17 @@
 <!--------------------------------------------------------------------------------------------S-->
                 <div class="control-formulario">
                     <label for="email">Email</label><br>
-                    <input type="email" id="email" name="email" placeholder="ejemplo@nodebike.com.pe" required>
+                    <input type="email" id="email" name="email" placeholder="ejemplo@nodebike.com.pe" >
                 </div>
 
                 <div class="control-formulario">
-                    <label for="contraseña">Clave</label><br>
-                    <input type="text" name="password" id="contraseña" class="control" minlength="7"  title="Minimum eight characters, at least one letter, one number and one special character" required>
+                    <label for="password">Clave</label><br>
+                    <input type="text" name="password" id="password" class="control" title="Minimum eight characters, at least one letter, one number and one special character" >
                 </div>
 
                 <div class="control-formulario">
                     <label for="passwordx2">Confirmar clave</label><br>
-                    <input type="text" name="passwordx2" id="passwordx2" class="control" minlength="7" title="La contraseña debe contener valores alfanuméricos, no se aceptan mayúsculas y se aceptan un mínimo de 7 caracteres" required>
+                    <input type="text" name="passwordx2" id="passwordx2" class="control" title="La contraseña debe contener valores alfanuméricos, no se aceptan mayúsculas y se aceptan un mínimo de 7 caracteres" >
                 </div>
 
                 <div class="control-formulario">
@@ -92,7 +95,7 @@
 
                         <div class="control-formulario">
                             <label for="numeroDocumento">Número de documento</label><br>
-                            <input type="text" name="numeroDocumento" id="numeroDocumento" class="control" minlength="8"  placeholder="75296358"  required>
+                            <input type="text" name="numeroDocumento" id="numeroDocumento" class="control" placeholder="75296358"  required>
                         </div>
 
                         <div class="control-formulario">
@@ -108,7 +111,7 @@
 
                         <div class="control-formulario">
                             <label for="celular">Número de celular</label><br>
-                            <input type="text" name="celular" id="celular" class="control" minlength="9"  placeholder="954562253"  >
+                            <input type="text" name="celular" id="celular" class="control" placeholder="954562253"  >
                         </div>
 
                         <div class="control-formulario">
@@ -127,6 +130,6 @@
  <!-- Footer -->
  <%- include('../partials/footer') %>
 <!-- End of Footer -->
-    
+<script src="/js/registerValidator.js"></script>
 </body>
 </html>

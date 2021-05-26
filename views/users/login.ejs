@@ -18,14 +18,17 @@
 
 
     <form class="main-form" action="/users/login" method="POST">
+        <div class="errores">
+            <ul></ul>
+        </div>
         <div class="control-formulario">
             <label for="email">Email</label><br>
-            <input type="email" id="email" name="email" placeholder="ejemplo@nodebike.com.pe" required>
+            <input type="email" id="email" name="email" placeholder="ejemplo@nodebike.com.pe">
         </div>
 
         <div class="control-formulario">
             <label for="contraseña">Clave</label><br>
-            <input type="text" name="password" id="contraseña" class="control" minlength="7" title="La contraseña debe contener valores alfanuméricos, no se aceptan mayúsculas y se aceptan un mínimo de 7 caracteres" required>
+            <input type="text" name="password" id="password" class="control">
         </div>
 
         <div class="control-formulario">
@@ -39,5 +42,6 @@
 
      <!-- Footer -->
      <%- include('../partials/footer') %>
+     <script src="/js/loginValidator.js"></script>
 </body>
      </html>
