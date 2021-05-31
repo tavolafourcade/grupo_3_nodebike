@@ -73,7 +73,7 @@ router.delete("/delete/:idUser", function(req,res){
     res.send("SOY DELETE!");
 })
 */
-
+router.get('/list', usersController.list);
 router.get('/login', usersController.login);
 router.post('/login',usersController.processLogin);
 router.get('/check',(req,res)=>{
