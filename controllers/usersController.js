@@ -6,6 +6,8 @@ const fs = require('fs');
 let usersFilePath =  path.resolve(__dirname, '../data/users.json');
 let usersFile = fs.readFileSync(usersFilePath, 'utf-8');
 
+// Requiriendo la BD
+let db = require('../database/models');
 
 let mainController = { 
 
@@ -100,20 +102,14 @@ let mainController = {
         }
     },
 
-  
-
-
-/*AGREGANDO VISTAS---FALTA AGREGAR VISTAS*/
-    list: (req,res)=>{
-        let users=[
-            {id:1 , name:"Dario"},
-            {id:2 , name:"Manuel"},
-            {id:3 , name:"Barl"},
-            {id:4 , name:"Juan"},
-            {id:5 , name:"Paul"},
-        ];
+    /* Leyendo la base de datos */
+    list: function(req,res){
+        db.Usuarios.findAll()
+        .then(function(Usuarios){
+            res.render("users/list", {Usuarios: Usuarios})
+        })
         /*Compartir la variable con la vista para que muestre el html */
-        res.render("users/list", {"usersController": users});
+        //res.render("users/list", {"usersController": users});
 
     },
 
