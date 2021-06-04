@@ -205,3 +205,35 @@ Se elaboró en gran medida lo solicitado para este Sprint a pesar de las dificul
 #### Resumen sprint:
 
 Identifiqué dificultades al momento de desarrollar el Sprint 7 ya que no comprendía como implementar las validaciones.
+
+
+## Sprint 8
+
+#### Start Doing:
+
+- Revisar los aspectos relevantes a APIs y React
+
+#### More of:
+
+- Comentar el código
+- Ordenar el código y la indentación.
+- Reducir el código de más.
+- Implementar la lógica detrás de la base de datos relacional.
+- Completar lo que falta sobre base de datos
+
+#### Keep Doing:
+
+- Elaborar la última versión del Trello.
+- Finiquitar partes relevantes del Sprint.
+
+#### Less of:
+
+- Procastinar en aspectos distintos a lo requerido en el Sprint 6.
+
+#### Stop Doing:
+
+- Dedicar esfuerzos a aspectos poco relevantes.
+
+#### Resumen sprint:
+
+- Haber identificado este Sprint como el más complejo me hizo sentir que habían aspectos que no se habían elaborado en Sprint anteriores que se necesitaban tener listos por lo que tuve que trabajarlos.

@@ -16,20 +16,20 @@ module.exports = (sequelize, dataTypes) => {
       type: dataTypes.STRING
     },
     password: {
-
-    },
-    category: {
       type: dataTypes.STRING
     },
-    image: {
+    category_id: {
+      type: dataTypes.STRING
+    },
+    avatar_image: {
       type: dataTypes.STRING
     }
   }
   let config = {
     tableName: "users",
-    timeStamps: false
+    timestamps: false
   }
+  const Usuarios = sequelize.define(alias, cols, config);
+  return Usuarios;
 }
   
-const User = sequelize.define(alias, cols, config);
-  return Usuario;

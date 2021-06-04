@@ -53,10 +53,7 @@ const validateRegisterForm = [
 router.get("/register", guestMiddleware, usersController.register);//create
 
 //Esta ruta se encargará de procesar el registro
-router.post("/register", fileUpload.single("imagenUsuario"), validateRegisterForm, usersController.processRegister);//store //show
-//router.post("/register",[fileUpload.single("imagenUsuario"),validateRegisterForm], usersController.processRegister);//store //show
-//implementar multer como  midleware
-//router.post("/register", fileUpload.single("imagenUsuario"), usersController.create);
+router.post("/register", [fileUpload.single("imagenUsuario"), validateRegisterForm], usersController.processRegister);
 
 
 router.get("/profile/:userId", usersController.profile);

@@ -5,11 +5,12 @@
     <%- include('../partials/header') %>
 <h1>User List</h1>
 <ul>
-    <% for(let i=0; i<usersController.length; i++){ %>
+    <% for(let i=0; i<Usuarios.length; i++){ %>
         <li>
-           <a href="users/detail/<%=usersController[i].id %>"> <%= usersController[i].name %> </a>
+            <label><%=Usuarios[i].first_name%></label>
+           <a href="users/detail/<%=Usuarios[i].id %>"> <%= Usuarios[i].name %> </a>
            <!--DELETE-->
-           <form method="POST" action="users/delete?_method=DELETE<%=usersController[i].id %>">
+           <form method="POST" action="users/delete?_method=DELETE<%=Usuarios[i].id %>">
            <button>Delete</button>
             </form>
         </li>

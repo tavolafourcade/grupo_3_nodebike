@@ -8,6 +8,7 @@ let usersFile = fs.readFileSync(usersFilePath, 'utf-8');
 
 // Requiriendo la BD
 let db = require('../database/models');
+const Usuario = require("../database/models/Usuario");
 
 let mainController = { 
 
@@ -17,45 +18,37 @@ let mainController = {
     },
 
     processRegister: (req,res) => {
+        //console.log("processRegister")
         const resultValidationForm = validationResult(req);
        
 
         if(resultValidationForm.errors.length > 0) {
+            console.log("El error es", resultValidationForm.errors)
             return res.render("users/register", {
                 errors: resultValidationForm.mapped(),
             });
         }else{
-            let {id, nombre, apellidoPaterno, email,password, category} = req.body;
+            console.log("processRegister sin error")
+            let {nombre, apellidoPaterno, email,password, category_id, avatar_image} = req.body;
             let image = req.file.filename;
 
             let user = {
-                id: null,
                 first_name: nombre,
                 last_name: apellidoPaterno,
                 email,
                 password,
-                category: 'user', 
-                image
+                category_id: 3, 
+                avatar_image: image
             };
 
-            let users;
-
-            if ( usersFile === '' ) {
-                users = [];
-            } else {
-                users = JSON.parse(usersFile);
-            }
-
-            user.id = users.length + 1;
-            console.log(user);
-            users.push(user);
-            usersJSON = JSON.stringify(users);
-            fs.writeFileSync(usersFilePath, usersJSON);
+            db.Usuarios.create(user).then(data => {
+                console.log('Return de user', data)
+                
+                return data})
+                .catch(error => console.log('El error fue', error))
 
             res.redirect('/');
 
-            //model.findOne({ where: { id } }).then(data => { return data });
-            //model.create(paylod).then(data => { return data });
         };
     },     
     
@@ -104,8 +97,10 @@ let mainController = {
 
     /* Leyendo la base de datos */
     list: function(req,res){
+        // console.log("Data de db", db)
         db.Usuarios.findAll()
         .then(function(Usuarios){
+            console.log("Usuarios content", Usuarios)
             res.render("users/list", {Usuarios: Usuarios})
         })
         /*Compartir la variable con la vista para que muestre el html */
