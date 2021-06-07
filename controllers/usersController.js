@@ -98,11 +98,19 @@ let mainController = {
     /* Leyendo la base de datos */
     list: function(req,res){
         // console.log("Data de db", db)
-        db.Usuarios.findAll()
-        .then(function(Usuarios){
-            console.log("Usuarios content", Usuarios)
-            res.render("users/list", {Usuarios: Usuarios})
-        })
+        /* Previous version that list users */
+        // db.Usuarios.findAll()
+        // .then(function(Usuarios){
+        //     console.log("Usuarios content", Usuarios)
+        //     res.render("users/list", {Usuarios: Usuarios})
+        //})
+
+        /* New version for the API */
+        db.Usuarios
+            .findAll()
+            .then(usuarios => {
+                return res.json(usuarios)
+            })
         /*Compartir la variable con la vista para que muestre el html */
         //res.render("users/list", {"usersController": users});
 
