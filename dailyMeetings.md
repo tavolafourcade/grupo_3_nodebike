@@ -60,3 +60,16 @@
 
 - Priorizar los puntos sobre los que se tienen más idea y abordar las clases de validaciones.
 - Revisar las sesiones más relevantes dentro del Sprint 7 sobre las que no se tiene conocimiento pleno aún.
+
+
+## Lunes 14/06/2021
+
+#### Temas abordados
+
+- Atraso en las clases en lo que respecta a las validaciones.
+- Medidas correctivas para alcanzar el objetivo del entregable.
+
+#### Acuerdos llegados
+
+- Priorizar los puntos sobre los que se tienen más idea y abordar las clases de validaciones.
+- Revisar las sesiones más relevantes dentro del Sprint 7 sobre las que no se tiene conocimiento pleno aún.

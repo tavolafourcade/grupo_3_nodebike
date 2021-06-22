@@ -70,9 +70,12 @@ router.delete("/delete/:idUser", function(req,res){
     res.send("SOY DELETE!");
 })
 */
-router.get('/list', usersController.list);
 router.get('/login', usersController.login);
 router.post('/login',usersController.processLogin);
+router.get('/list', usersController.list);
+router.get('/:id', usersController.show);
+router.get('/search', usersController.search);
+
 router.get('/check',(req,res)=>{
     if (req.session.usuarioLogueado == undefined){
         res.send("No estas logueado");

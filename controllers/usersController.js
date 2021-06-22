@@ -21,7 +21,6 @@ let mainController = {
         //console.log("processRegister")
         const resultValidationForm = validationResult(req);
        
-
         if(resultValidationForm.errors.length > 0) {
             console.log("El error es", resultValidationForm.errors)
             return res.render("users/register", {
@@ -95,7 +94,8 @@ let mainController = {
         }
     },
 
-    /* Leyendo la base de datos */
+    /* Metodo que consulta todas sus peliculas */
+    /* Consulta de tipo GET */
     list: function(req,res){
         // console.log("Data de db", db)
         /* Previous version that list users */
@@ -105,27 +105,40 @@ let mainController = {
         //     res.render("users/list", {Usuarios: Usuarios})
         //})
 
-        /* New version for the API */
+        /* EndPoint del API donde selecciono todas las películas */
         db.Usuarios
             .findAll()
             .then(usuarios => {
-                return res.json(usuarios)
+                /*return res.status(200).json({
+                    total: usuarios.length,
+                    datos: usuarios,
+                    status: 200
+                })*/
+                res.render("users/list", {"Usuarios": usuarios});
             })
         /*Compartir la variable con la vista para que muestre el html */
-        //res.render("users/list", {"usersController": users});
+        
 
     },
 
-    search: function(req,res){
-        let loQueBuscaElUsuario = req.query.search;
+    /*Metodo que consulta una pelicula en particular */
+    /* Consulta de tipo GET */
+    show: function(req,res){
+        db.Usuarios
+        .findByPk(req.params.id)
+        .then(usuario => {
+            return res.status(200).json({
+                datos: usuario,
+                status: 200
+            })
+        })
+    },
 
-        let users=[
-            {id:1 , name:"Dario"},
-            {id:2 , name:"Manuel"},
-            {id:3 , name:"Barl"},
-            {id:4 , name:"Juan"},
-            {id:5 , name:"Paul"},
-        ];
+    /* Metodo para crear un usuario */
+    /* Consulta de tipo POST */
+
+    search: function(req,res){
+        let userSearch = req.query.search;
 
         let search=[];
 

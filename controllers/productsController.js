@@ -25,6 +25,7 @@ let mainController = {
         let id = req.params.id;
         let bicicleta = products[id-1];
         res.render( "products/productDetail", {bicicleta: bicicleta});
+        
     },
 
     productList:(req, res) =>{
